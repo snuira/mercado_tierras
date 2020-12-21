@@ -3,6 +3,14 @@
 
 ![SNUIRA](snuira.jpg "SNUIRA")
 
+## Qué queremos?
+
+Proponer y evaluar una arquitectura y metodología para analítica de Big Data en la nube que permita al laboratorio de datos de SNUIRA el desarrollo de proyectos de analítica para el sector agro.
+
+Para materializar la arquitectura propuesta se propone un primer proyecto piloto de analítica orientado a facilitar y agilizar el monitoreo, la identificación de tendencias y proyección del comportamiento de la dinámica del mercado de tierras rurales agropecuarias en Colombia, aplicando técnicas de análisis de datos a partir de fuentes de información heterogéneas como son las transacciones inmobiliarias, actos registrales e información catastral, entre otros.
+
+
+##  Contenido
 
 __(Proyecto en construcción)__
 
