@@ -21,7 +21,7 @@ __(Proyecto en construcción)__
 * [03 - Documentos y presentaciones preparados para compartir información sobre el proyecto](03_Presentaciones)
 * [04 - Entendimiento del negocio](04_Entendimiento_Negocio)
 * [05 - Descubrimiento de datos](05_Descubrimiento_Datos)
-* 06_Preparacion_Datos: Preparación de datos
+* [06 - Preparación de datos](06_Preparacion_Datos)
 * 07_Validacion_Datos: Validación de datos
 * 08_Analisis: Análisis de datos
 *  * 08_01_Modelos: Modelos de análisis
@@ -29,8 +29,8 @@ __(Proyecto en construcción)__
 * 10_Validacion_Evaluacion_Modelos: Validación y evaluación de los modelos analíticos
 * 11_Publicacion_Modelos: Publicación de modelos y resultados
 * 12_Lecciones_Aprendidas: Lecciones aprendidas y recomendaciones
-* 13_Datos
-* 14_Codigo_Fuente
+* [13 - Ejemplos de datos](13_Datos)
+* [14 - Codigo fuente](14_Codigo_Fuente)
 
 
 
