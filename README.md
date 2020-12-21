@@ -1,16 +1,30 @@
  # Prototipo - Mercado de Tierras UPRA - Laboratorio de datos SNUIRA
 
+- [Prototipo - Mercado de Tierras UPRA - Laboratorio de datos SNUIRA](#prototipo---mercado-de-tierras-upra---laboratorio-de-datos-snuira)
+  - [Qué es SNUIRA?](#qué-es-snuira)
+  - [Qué queremos en este prototipo?](#qué-queremos-en-este-prototipo)
+  - [Contenido del repositorio](#contenido-del-repositorio)
 
 ![SNUIRA](snuira.jpg "SNUIRA")
 
-## Qué queremos?
+## Qué es SNUIRA?
+
+Se entiende por Sistema Nacional Unificado de Información Rural y Agropecuaria  __[(SNUIRA)](https://www.upra.gov.co/web/guest/sistema-nacional-unificado-para-la-informacion-rural-agropecuaria)__, como un ecosistema digital o un conjunto consolidado de actores, políticas, procesos, tecnologías, servicios, sistemas de información, información y datos, que alineados estratégicamente buscan una permanente transformación digital en los asuntos agropecuarios y el desarrollo rural. Es una estrategia de Estado que busca ordenar, gestionar y gobernar la información sectorial, con el propósito de optimizar su aprovechamiento y propiciar una mejor toma de decisiones. 
+ 
+El SNUIRA hace parte de los compromisos adquiridos en el Plan Nacional de Desarrollo y permitirá conocer y caracterizar las distintas fuentes de información, lograr articulación en temas como qué datos se producen, quién los genera, de qué manera, con qué estándares y con qué frecuencia. 
+
+SNURIA articulará las iniciativas existentes en torno a producción y uso de información agropecuaria como lo son la mesa estadística sectorial, el plan estratégico de ciencia tecnología de innovación – PECTIA y la Infraestructura de datos espaciales del sector, entre otros; todo enmarcado en las estrategias del Gobierno nacional para lograr la transformación digital del país como son el modelo de interoperabilidad y la política de Gobierno Digital. 
+
+Para mayor información favor consultar la página oficial del proyecto:  https://www.upra.gov.co/web/guest/sistema-nacional-unificado-para-la-informacion-rural-agropecuaria
+
+## Qué queremos en este prototipo?
 
 Proponer y evaluar una arquitectura y metodología para analítica de Big Data en la nube que permita al laboratorio de datos de SNUIRA el desarrollo de proyectos de analítica para el sector agro.
 
 Para materializar la arquitectura propuesta se propone un primer proyecto piloto de analítica orientado a facilitar y agilizar el monitoreo, la identificación de tendencias y proyección del comportamiento de la dinámica del mercado de tierras rurales agropecuarias en Colombia, aplicando técnicas de análisis de datos a partir de fuentes de información heterogéneas como son las transacciones inmobiliarias, actos registrales e información catastral, entre otros.
 
 
-##  Contenido
+##  Contenido del repositorio
 
 __(Proyecto en construcción)__
 
