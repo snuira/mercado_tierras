@@ -1,10 +1,10 @@
- # Mercado de Tierras
+ # Prototipo - Mercado de Tierras UPRA - Laboratorio de datos SNUIRA
 
-NOTA ANTES DE LA CONSOLIDACIÓN FINAL
-QUITAR LOS KEYS DE ACCESO
-VOLVER A CREAR NUEVO REPO QUE NO TENGA EN EL HISTÓRICO DE COMMITS LOS KEYS
+
+![SNUIRA](snuira.jpg "SNUIRA")
 
  Estructura de carpetas:
+
  * 01_Gestion :  Documentos de planificación y gestión de proyectos. Metodología
    * 01_01_Seguimiento:  Reporte de seguimiento semanal
  * 02_Arquitectura: Arquitectura del sistema
