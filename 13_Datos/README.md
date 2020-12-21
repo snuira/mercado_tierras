@@ -18,11 +18,11 @@ Esta carpeta contiene los datos en formato .json productos de los procesos de ET
 
 * SNR
 
-     nombres_apellido_nombre.json: Listado de nombres masculinos y femeninos post ETL con genero asigando según rangos de cédula.
+     nombres_patron_tipo_1.json: Listado de nombres masculinos y femeninos post ETL con genero asigando según rangos de cédula.
      
-     nombres_apellido_nombres.json: Listado de nombres masculinos y femeninos compuestos post ETL con genero asignado según rangos de cédula.
+     nombres_patron_tipo_2.json: Listado de nombres masculinos y femeninos compuestos post ETL con genero asignado según rangos de cédula.
      
-     nombres_separados_coma.json: Listado de nombres masculinos y femeninos compuestos separados por comas ","  post ETL con genero asignado según rangos de cédula.
+     nombres_patron_tipo_3.json: Listado de nombres masculinos y femeninos compuestos con patron separados por comas ","  post ETL con genero asignado según rangos de cédula.
 
 ## 2_Salida_Prediccion:
 
