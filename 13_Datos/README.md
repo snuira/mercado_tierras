@@ -7,8 +7,10 @@ Dentro de esta carpeta se encuentran distribuidos los datos de la siguiente mane
 Esta carpeta contiene los datos que se han utilizado hasta el momento para realizar el entrenamiento del modelo de ML. Se encuentra a su vez subdividido por entidad de donde provienen los datos insumo de entrenamiento.
 
 * Repositorio_Kaggle:
-     *female_names.csv: Este archivo contiene un listado de nombres femeninos con datos de frecuencia y promedio de edad.
-     *male_names.csv: Este archivo contiene un listado de nombres masculinos con datos de frecuencia y promedio de edad.
+     
+     female_names.csv: Este archivo contiene un listado de nombres femeninos con datos de frecuencia y promedio de edad.
+     
+     male_names.csv: Este archivo contiene un listado de nombres masculinos con datos de frecuencia y promedio de edad.
 
 ## 1_Para_Prediccion:
 
