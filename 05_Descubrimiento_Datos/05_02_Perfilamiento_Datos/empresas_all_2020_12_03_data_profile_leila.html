@@ -1,0 +1,1550 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <!--
+        # Created on Tue Jul 10
+        # @author: jairo ruiz saenz
+        -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Reporte perfilamiento</title>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.min.js"></script>
+
+        <!-- Load plotly.js into the DOM -->
+	    <script src='https://cdn.plot.ly/plotly-latest.min.js'></script>
+
+        <style>
+            .aligned-row { display: flex; }
+            .borde { border-style: solid; border-width: 1px; border-color: #c2c2c2; }
+            .descripcion   { min-height:40px; }
+            .max_size_row  { max-height:450px !important; }
+            .max_size_row2 { height:450px !important;}
+            .max_size_row3 { height:450px !important;}
+            p { margin-bottom:5px; }
+            table > tbody > tr > :nth-child(1) { font-weight:bold; }
+            table > tbody > tr:hover           { background-color: #ffff99 !important; }
+            table > tbody > tr:nth-child(even) { background: #ededed;}
+            .tabla_sin_bold > table > tbody > tr > :nth-child(1){ font-weight:normal !important; }
+            .tableFixHead { overflow-y: auto; height: 100px; }
+            .tableFixHead thead th { position: sticky; top: 0; background:#ffffff; }
+            tr td { white-space: nowrap;}
+            tr th { white-space: nowrap;}
+            .container {width:100%; text-align: center; overflow:display;}
+            .white_spaces > tbody > tr > td:nth-child(2) { white-space: normal !important;}
+            table#StatusTable tr.matching { background: #ffffdb; }
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+
+            <div class="row">
+                <div class="col-md-1"></div>
+                <div class="col-md-10">
+
+                    <!-- Header -->
+                    <div class="row max_size_row">
+                        <div class="col-md-12">
+                            <h1>Reporte perfilamiento</h1>
+                            <em>Reporte generado automáticamente 03-12-2020 12:50:38 PM</em>
+                        </div>
+                    </div>
+
+                    <hr>
+
+                    <!-- Metadatos -->
+                    
+
+                    <!-- Estadísticas generales -->
+                    <div class="row max_size_row">
+                        <div class="col-md-12 borde">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h3><em>Estadísticas generales</em></h3>
+                                </div>
+                            </div>
+                            <div class="row hidden-md hidden-lg">
+                                <div class="col-md-12">
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Categoría</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Número de filas</td>
+      <td>47,168</td>
+    </tr>
+    <tr>
+      <td>Número de columnas</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Columnas numéricas</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Columnas de texto</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Columnas booleanas</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Columnas de fecha</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Otro tipo de columnas</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Número de filas repetidas</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Columnas con más de la mitad de datos faltantes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Columnas con más del 10% de datos como extremos</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Uso en memoria de la base en megabytes (aproximado)</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row hidden-xs hidden-sm">
+                                <div class="col-md-6">
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Categoría</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Número de filas</td>
+      <td>47,168</td>
+    </tr>
+    <tr>
+      <td>Número de columnas</td>
+      <td>4</td>
+    </tr>
+    <tr>
+      <td>Columnas numéricas</td>
+      <td>1</td>
+    </tr>
+    <tr>
+      <td>Columnas de texto</td>
+      <td>3</td>
+    </tr>
+    <tr>
+      <td>Columnas booleanas</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Columnas de fecha</td>
+      <td>0</td>
+    </tr>
+  </tbody>
+</table>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="table-responsive">
+                                        <table class="table table-condensed">
+  <thead>
+    <tr style="text-align: right;">
+      <th>Categoría</th>
+      <th>Valor</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Otro tipo de columnas</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Número de filas repetidas</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Columnas con más de la mitad de datos faltantes</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Columnas con más del 10% de datos como extremos</td>
+      <td>0</td>
+    </tr>
+    <tr>
+      <td>Uso en memoria de la base en megabytes (aproximado)</td>
+      <td>1</td>
+    </tr>
+  </tbody>
+</table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- Muestra de datos -->
+                    <div class="row">
+                        <div class="col-md-12 borde">
+
+                            <h3><em>Muestra de datos</em></h3>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#tab_head">Primeras 10 filas</a></li>
+                                <li><a data-toggle="tab" href="#tab_tail">Últimas 10 filas</a></li>
+                            </ul>
+
+                            <div class="tab-content">
+                                <!-- Primeras filas -->
+                                <div id="tab_head" class="tab-pane fade in active">
+                                    <br>
+                                    <div class="table-responsive tabla_sin_bold">
+                                        <table class="table table-condensed">
+  <thead>
+    <tr style="text-align: right;">
+      <th>nit</th>
+      <th>empresa</th>
+      <th>fuente</th>
+      <th>nit_len</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>899999068</td>
+      <td>ECOPETROL S.A</td>
+      <td>1000_empresas</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>890200656</td>
+      <td>PALMAS DEL CESAR S.A.</td>
+      <td>1000_empresas</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>830095213</td>
+      <td>ORGANIZACIÓN TERPEL S.A.</td>
+      <td>1000_empresas</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>900112515</td>
+      <td>REFINERIA DE CARTAGENA S.A.S.</td>
+      <td>1000_empresas</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>890900608</td>
+      <td>ALMACENES EXITO S A</td>
+      <td>1000_empresas</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>890904996</td>
+      <td>EMPRESAS PÚBLICAS DE MEDELLÍN ESP</td>
+      <td>1000_empresas</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>890100577</td>
+      <td>AEROVIAS DEL CONTINENTE AMERICANO S.A. - AVIANCA S.A.</td>
+      <td>1000_empresas</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>800153993</td>
+      <td>COMUNICACIÓN CELULAR S.A.</td>
+      <td>1000_empresas</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>900156264</td>
+      <td>NUEVA EPS S.A.</td>
+      <td>1000_empresas</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>900531210</td>
+      <td>Cenit Transporte y Logística de Hidrocarburos S.A.S.</td>
+      <td>1000_empresas</td>
+      <td>9.0</td>
+    </tr>
+  </tbody>
+</table>
+                                    </div>
+                                </div>
+
+                                <!-- Últimas filas -->
+                                <div id="tab_tail" class="tab-pane fade">
+                                    <br>
+                                    <div class="table-responsive tabla_sin_bold">
+                                        <table class="table table-condensed">
+  <thead>
+    <tr style="text-align: right;">
+      <th>nit</th>
+      <th>empresa</th>
+      <th>fuente</th>
+      <th>nit_len</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>901142220</td>
+      <td>CONSORCIO RENOVACIONZ5</td>
+      <td>secop_ii_proveedores</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>802010401</td>
+      <td>HOSPITAL DE MANATI ESE</td>
+      <td>secop_ii_proveedores</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>8000447743</td>
+      <td>RÜEFLI DE LA TORRE &amp; CIA LTDA</td>
+      <td>secop_ii_proveedores</td>
+      <td>10.0</td>
+    </tr>
+    <tr>
+      <td>900360037</td>
+      <td>ASOCIACIÓN DE REFORESTADORES Y PRODUCTORES AGROPECUARIOS DE LA TRONCAL DEL CARIBE</td>
+      <td>secop_ii_proveedores</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>860001317</td>
+      <td>PUBLICAR PUBLICIDAD MULTIMEDIA S.A.S.</td>
+      <td>secop_ii_proveedores</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>900518211</td>
+      <td>CONSORCIO NACIONAL</td>
+      <td>secop_ii_proveedores</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>901330398</td>
+      <td>FUNDACIÓN DE MUJERES MANIZALITAS NUESTRA SEÑORA DE FATIMA</td>
+      <td>secop_ii_proveedores</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>NaN</td>
+      <td>CUIDAR CON CALIDEZ HUMANA IPS SAS -</td>
+      <td>secop_ii_proveedores</td>
+      <td>NaN</td>
+    </tr>
+    <tr>
+      <td>900610775</td>
+      <td>CV&amp;S CONSTRUCTORES S.A.S.</td>
+      <td>secop_ii_proveedores</td>
+      <td>9.0</td>
+    </tr>
+    <tr>
+      <td>1022389919</td>
+      <td>ALEJANDRA GUTIERREZ</td>
+      <td>secop_ii_proveedores</td>
+      <td>10.0</td>
+    </tr>
+  </tbody>
+</table>
+                                    </div>
+                                </div>
+                            </div>
+                            <hr><em>47,168 filas x 4 columnas</em><br><br>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- Estadísticas específicas -->
+                    <div class="row">
+                        <div class="col-md-12 borde">
+
+                            <h3><em>Estadísticas específicas</em></h3>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#tab05">Tipo de las columnas</a></li>
+                                <li><a data-toggle="tab" href="#tab03">Frecuencia de categorías</a></li>
+                                <li><a data-toggle="tab" href="#tab04">Datos duplicados</a></li>
+                                <li><a data-toggle="tab" href="#tab06">Estadísticas descriptivas</a></li>
+                            </ul>
+
+                            <div class="tab-content" style="text-align: justify; text-justify: inter-word;">
+
+                                <!-- Tipo de las columnas -->
+                                <div id="tab05" class="tab-pane fade in active">
+                                    <br>
+                                    <p class="descripcion">
+                                        Aquí se muestran los tipos de las columnas de la base de datos con tres metodologías diferentes. La columna 'Tipo general' muestra si las variables son numéricas, de texto, booleanas; la columna 'Tipo general (Python)' muestra el tipo de la variable según la función "dtypes" de Python; las columnas 'Tipo especifico' muestran los tipos de las observaciones de cada columna, incluidos datos faltantes ("nan"), como porcentaje del total.
+                                    </p>
+                                    <div class="row max_size_row2 aligned-row">
+
+                                        <div class="col-md-3 table-responsive">
+                                            <h4><strong><em>Variables</em></strong></h4>
+                                            <p><input type="checkbox" onClick="toggle5(this)" id="select-all_5"> Seleccionar todos</p>
+                                                
+                                                <p><input type="checkbox" name="tab5" class="checkbox_tab5" value="nit"> 1 - nit</p>
+                                            
+                                                <p><input type="checkbox" name="tab5" class="checkbox_tab5" value="empresa"> 2 - empresa</p>
+                                            
+                                                <p><input type="checkbox" name="tab5" class="checkbox_tab5" value="fuente"> 3 - fuente</p>
+                                            
+                                                <p><input type="checkbox" name="tab5" class="checkbox_tab5" value="nit_len"> 4 - nit_len</p>
+                                            
+                                        </div>
+                                        <div class="col-md-9 table-responsive">
+                                            <table class="table table-condensed tableFixHead" id="OtrosTable">
+                                                <thead>
+                                                    <tr>
+                                                        <th>Variable</th>
+                                                        
+                                                            <th>Tipo general</th>
+                                                        
+                                                            <th>Tipo general (Python)</th>
+                                                        
+                                                            <th>Tipo especifico 1</th>
+                                                        
+                                                            <th>Tipo especifico 2</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>Texto</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>object</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>'str': 99.66%</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>nan: 0.34%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">empresa</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>Texto</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>object</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>'str': 100.0%</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td></td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">fuente</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>Texto</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>object</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>'str': 100.0%</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td></td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>Numérico</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>float64</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>'float': 99.66%</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>nan: 0.34%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Frecuencia de categorías -->
+                                <div id="tab03" class="tab-pane fade">
+                                    <br>
+                                    <p class="descripcion">
+                                        Contiene las 10 categorías más frecuentes de las columnas tipo texto y presenta el porcentaje dentro del total de observaciones. Incluye valores faltantes.
+                                    </p>
+                                    <div class="row max_size_row2 aligned-row">
+
+                                        <div class="col-md-3 table-responsive">
+                                            <h4><strong><em>Variables</em></strong></h4>
+                                            <p><input type="checkbox" onClick="toggle3(this)" id="select-all_3"> Seleccionar todos</p>
+                                            
+                                                <p><input type="checkbox" name="tab3" class="checkbox_tab3" value="fuente"> 1 - fuente</p>
+                                            
+                                                <p><input type="checkbox" name="tab3" class="checkbox_tab3" value="nit_len"> 2 - nit_len</p>
+                                            
+                                        </div>
+                                        <div class="col-md-9 table-responsive">
+                                            <table class="table table-condensed tableFixHead" id="StatusTable">
+                                                <thead>
+                                                    <tr>
+                                                        
+                                                            <th>Columna</th>
+                                                        
+                                                            <th>Valor</th>
+                                                        
+                                                            <th>Frecuencia</th>
+                                                        
+                                                            <th>Porcentaje del total de filas</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">fuente</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>secop_ii_proveedores</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>36,502</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>77.39%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">fuente</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>rups</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>7,492</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>15.88%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">fuente</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>secop_ii_entidades</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>1,609</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>3.41%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">fuente</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>1000_empresas</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>1,000</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>2.12%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">fuente</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>maritimo</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>388</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0.82%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">fuente</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>fluvial</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>157</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0.33%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">fuente</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>transporte</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>20</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0.04%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">fuente</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>Datos faltantes</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0.00%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">fuente</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>Total categorías (incluye NA): 7</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>nan</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>nan%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>9.0</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>24,984</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>52.97%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>10.0</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>13,749</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>29.15%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>8.0</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>3,341</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>7.08%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0.0</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>2,368</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>5.02%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>11.0</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>2,115</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>4.48%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>7.0</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>227</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0.48%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>6.0</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>156</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0.33%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>12.0</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>20</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0.04%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>1.0</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>13</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0.03%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>3.0</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>12</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0.03%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>Demás categorías</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>23</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0.05%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>Datos faltantes</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>160</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>0.34%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                        <tr>
+                                                            
+                                                                
+                                                                    <td class="referencia">nit_len</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>Total categorías (incluye NA): 19</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>nan</td>
+                                                                
+                                                            
+                                                                
+                                                                    <td>nan%</td>
+                                                                
+                                                            
+                                                        </tr>
+                                                    
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Datos duplicados -->
+                                <div id="tab04" class="tab-pane fade">
+                                    <br>
+                                    <p class="descripcion">
+                                        Cada columna muestra los nombres de las filas y columnas que están duplicadas en la base de datos
+                                    </p>
+                                    <div class="row max_size_row2 aligned-row">
+                                        <div class="col-md-12 table-responsive">
+                                            <ul class="nav nav-tabs">
+                                                <li class="active"><a data-toggle="tab" href="#duplic_by_row">Filas</a></li>
+                                                <li><a data-toggle="tab" href="#duplic_by_column">Columnas</a></li>
+                                            </ul>
+                                            <div class="tab-content" style="text-align: justify; text-justify: inter-word;">
+
+                                                <!-- Duplicados por filas -->
+                                                <div id="duplic_by_row" class="tab-pane fade in active">
+                                                    <br>
+                                                    
+                                                        <strong>* La base de datos no contiene filas duplicadas</strong>
+                                                    
+                                                </div>
+
+                                                <!-- Duplicados por columnas -->
+                                                <div id="duplic_by_column" class="tab-pane fade">
+                                                    <br>
+                                                    
+                                                        <strong>* La base de datos no contiene columnas duplicadas</strong>
+                                                    
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- Estadísticas Descriptivas -->
+                                <div id="tab06" class="tab-pane fade">
+                                    <br>
+                                    <p class="descripcion">
+                                        Contiene información para cada columna de tipo numérico, incluye media, mediana, percentiles, desviación estándar, valores extremos y porcentaje de valores faltantes.
+                                    </p>
+                                    
+                                        <div class="row max_size_row2 aligned-row">
+                                            <div class="col-md-3 table-responsive">
+                                                <h4><strong><em>Variables</em></strong></h4>
+                                                <p><input type="checkbox" onClick="toggle6(this)" id="select-all_6"> Seleccionar todos</p>
+                                                    
+                                                    <p><input type="checkbox" name="tab6" class="checkbox_tab6" value="nit_len"> 1 - nit_len</p>
+                                                
+                                            </div>
+                                            <div class="col-md-9 table-responsive">
+                                                <table class="table table-condensed tableFixHead" id="EstDescriptivas">
+                                                    <thead>
+                                                        <tr>
+                                                            <th>Variable</th>
+                                                            
+                                                                <th>Conteo</th>
+                                                            
+                                                                <th>Media</th>
+                                                            
+                                                                <th>Desviación estándar</th>
+                                                            
+                                                                <th>Valor mín</th>
+                                                            
+                                                                <th>25%</th>
+                                                            
+                                                                <th>50%</th>
+                                                            
+                                                                <th>75%</th>
+                                                            
+                                                                <th>Valor máx</th>
+                                                            
+                                                                <th>Faltantes</th>
+                                                            
+                                                                <th>Outliers total</th>
+                                                            
+                                                                <th>Outliers altos</th>
+                                                            
+                                                                <th>Outliers bajos</th>
+                                                            
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        
+                                                            <tr>
+                                                                
+                                                                    
+                                                                        <td class="referencia">nit_len</td>
+                                                                    
+                                                                
+                                                                    
+                                                                        <td>47,008</td>
+                                                                    
+                                                                
+                                                                    
+                                                                        <td>8.84</td>
+                                                                    
+                                                                
+                                                                    
+                                                                        <td>2.17</td>
+                                                                    
+                                                                
+                                                                    
+                                                                        <td>0.00</td>
+                                                                    
+                                                                
+                                                                    
+                                                                        <td>9.00</td>
+                                                                    
+                                                                
+                                                                    
+                                                                        <td>9.00</td>
+                                                                    
+                                                                
+                                                                    
+                                                                        <td>10.00</td>
+                                                                    
+                                                                
+                                                                    
+                                                                        <td>23.00</td>
+                                                                    
+                                                                
+                                                                    
+                                                                        <td>0.34%</td>
+                                                                    
+                                                                
+                                                                    
+                                                                        <td>5.98%</td>
+                                                                    
+                                                                
+                                                                    
+                                                                        <td>0.07%</td>
+                                                                    
+                                                                
+                                                                    
+                                                                        <td>5.90%</td>
+                                                                    
+                                                                
+                                                            </tr>
+                                                        
+                                                    </tbody>
+                                                </table>
+                                            </div>
+                                        </div>
+                                    
+                                </div>
+                            </div>
+                            <br>
+                        </div>
+                    </div>
+
+                    <br>
+
+                    <!-- Correlaciones -->
+                    <div class="row">
+                        <div class="col-md-12 borde">
+
+                            <h3><em>Correlaciones</em></h3>
+                            <ul class="nav nav-tabs">
+                                <li class="active"><a data-toggle="tab" href="#tab01b">Pearson</a></li>
+                                <li><a data-toggle="tab" href="#tab02b">Kendall</a></li>
+                                <li><a data-toggle="tab" href="#tab03b">Spearman</a></li>
+                                <li><a data-toggle="tab" href="#tab04b">Cramer</a></li>
+                                <li><a data-toggle="tab" href="#tab05b">Phik</a></li>
+                            </ul>
+
+                            <div class="tab-content" style="text-align: justify; text-justify: inter-word;">
+
+                                <!-- correlación numérica - Pearson -->
+                                <div id="tab01b" class="tab-pane fade in active">
+                                    <br>
+                                    <p class="descripcion">
+                                        La correlación de Pearson es una medida de correlación lineal entre dos variables. Varía entre -1 y 1, donde -1 significa que la correlación entre las variables es negativa y total, 0 que no existe la correlación y 1 que hay correlación positiva total. Se calcula como la división de la covarianza de las dos variables con el producto de las desviaciones estándar de cada variable.
+                                    </p>
+                                    
+                                        <p><strong>* La base de datos no tiene columnas numéricas para el cálculo de correlaciones</strong></p>
+                                    
+                                </div>
+
+                                <!-- correlación numérica - Kendall -->
+                                <div id="tab02b" class="tab-pane fade">
+                                    <br>
+                                    <p class="descripcion">
+                                       La correlación de Kendall mide la relación entre dos variables ordinales. Varía entre -1 y 1, donde -1 significa que la correlación entre las variables es negativa total, 0 que no existe la correlación y 1 que hay correlación positiva total. Se calcula como la división de los números concordantes menos los discordantes de pares entre las variables con el número total de pares.
+                                    </p>
+                                    
+                                        <p><strong>* La base de datos no tiene columnas numéricas para el cálculo de correlaciones</strong></p>
+                                    
+                                </div>
+
+                                <!-- correlación numérica - Spearman -->
+                                <div id="tab03b" class="tab-pane fade">
+                                    <br>
+                                    <p class="descripcion">
+                                        La correlación de Spearman es una medida de correlación monotónica que  se usa principalmente para medir la relación entre dos variables ordinales. Varía entre -1 y 1, donde -1 significa una correlación monotónica negativa total, 0 que no hay correlación monotónica y 1 que hay una correlación monotónica positiva total. Se calcula como la división de la covarianza de los rangos de cada variable con el producto de las desviaciones estándar de cada variable.
+                                    </p>
+                                    
+                                        <p><strong>* La base de datos no tiene columnas numéricas para el cálculo de correlaciones</strong></p>
+                                    
+                                </div>
+
+                                <!-- correlación categórica - Cramer -->
+                                <div id="tab04b" class="tab-pane fade">
+                                    <br>
+                                    <p class="descripcion">
+                                        La correlación Cramer V se usas para medir la relación entre dos variables nominales. Varía entre 0 y 1, donde 0 significa que no hay correlación y 1 que la correlación es positiva y total. Se calcula como la raíz cuadrada de la división de estadístico Chi Cuadrado con el mínimo entre el número de filas o columnas y el número total de observaciones.
+                                    </p>
+                                    
+                                        <div class="row max_size_row3 aligned-row">
+                                            <div class="col-md-12">
+                                                <div class="container">
+                                                    <div id='corre_cramer' class="max_size_row3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <p>* En caso de ver mal los labels del eje x, ajustar el zoom del navegador.</p><br>
+                                    
+                                </div>
+
+                                <!-- correlación categórica - Phik -->
+                                <div id="tab05b" class="tab-pane fade">
+                                    <br>
+                                    <p class="descripcion">
+                                        Esta correlación se calcula con el módulo Phik de Python. <a href="https://pypi.org/project/phik/" target="_blank">ver más detalles</a>
+                                    </p>
+                                    
+                                        <div class="row max_size_row3 aligned-row">
+                                            <div class="col-md-12">
+                                                <div class="container">
+                                                    <div id='corre_phik' class="max_size_row3"></div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <p>* En caso de ver mal los labels del eje x, ajustar el zoom del navegador.</p><br>
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Footer -->
+                    <div class="row">
+                        <div class="col-md-12">
+                            <footer class="text-center">
+                                <hr>
+                                <p>
+                                    Reporte generado con <em><a href="https://github.com/ucd-dnp/leila" target="_blank">LEILA - Librería de calidad de datos</a></em> - Versión 0.1
+                                </p>
+                                <br>
+                            </footer>
+                        </div>
+                    </div>
+
+                    <!-- scripts generales -->
+                    <script>
+                        // hace el toggle de cada columna en la tabla
+                        // de acuerdo con el valor de su respectivo checkbox
+                        $("input:checkbox").attr("checked",true).click(function()
+                        {
+                            var shcolumn="."+$(this).attr("name");
+                            $(shcolumn).toggle(display=this.checked);
+                        });
+                    </script>
+
+                    <!-- scripts para tab3 -->
+                    <script>
+                        // Filtro de tabla
+                        $("input[name='tab3']").change(function () {
+                            var classes = [];
+
+                            $("input[name='tab3']").each(function () {
+                                if ($(this).is(":checked")) { classes.push($(this).val()); }
+                            });
+
+                            if (classes == "") { // if no filters selected, show all items
+                                $("#StatusTable tbody tr").hide();
+                            } else { // otherwise, hide everything...
+                                $("#StatusTable tbody tr").hide();
+
+                                $("#StatusTable tr").each(function () {
+                                    var show = false;
+                                    var row = $(this);
+                                    classes.forEach(function (className) {
+                                        if (row.find('td' + '.referencia').html() == className) { show = true; }
+                                    });
+                                    if (show) { row.show(); }
+                                });
+                            }
+                        });
+                    </script>
+
+                    <script>
+                        // cambia el valor de los checkboxs de clase 'checkbox_tab3'
+                        // de acuerdo con el valor del checkbox de 'seleccionar todos'
+                        // y hace el toggle de sus respectivas columnas en la tabla
+                        function toggle3(source) {
+                            checkboxes = document.getElementsByClassName('checkbox_tab3');
+                            for(var i=0, n=checkboxes.length;i<n;i++) {
+                                checkboxes[i].checked = source.checked;
+                            }
+
+                            if (source.checked == true) {
+                                $("#StatusTable tbody tr").show();
+                            } else {
+                                $("#StatusTable tbody tr").hide();
+                            }
+                        }
+                    </script>
+
+                    <script>
+                        // verifica el estado de los checkboxs con clase 'checkbox_tab3',
+                        // si uno es false, cambia el valor del checkbox de 'seleccionar todos' a false
+                        // si todos son true, cambia el valor del checkbox de 'seleccionar todos' a true
+                        $("input[name='tab3']").change(function () {
+                            checkboxes = document.getElementsByClassName('checkbox_tab3');
+                            var value = true;
+                            for(var i=0, n=checkboxes.length;i<n;i++) {
+                                if (checkboxes[i].checked == false) {
+                                    value = false;
+                                }
+                            }
+                            $('#select-all_3').prop('checked', value);
+                        });
+                    </script>
+
+                    <!-- scripts para tab5 -->
+                    <script>
+                        // Filtro de tabla
+                        $("input[name='tab5']").change(function () {
+                            var classes = [];
+
+                            $("input[name='tab5']").each(function () {
+                                if ($(this).is(":checked")) { classes.push($(this).val()); }
+                            });
+
+                            if (classes == "") { // if no filters selected, show all items
+                                $("#OtrosTable tbody tr").hide();
+                            } else { // otherwise, hide everything...
+                                $("#OtrosTable tbody tr").hide();
+
+                                $("#OtrosTable tr").each(function () {
+                                    var show = false;
+                                    var row = $(this);
+                                    classes.forEach(function (className) {
+                                        if (row.find('td' + '.referencia').html() == className) { show = true; }
+                                    });
+                                    if (show) { row.show(); }
+                                });
+                            }
+                        });
+                    </script>
+
+                    <script>
+                        // cambia el valor de los checkboxs de clase 'checkbox_tab5'
+                        // de acuerdo con el valor del checkbox de 'seleccionar todos'
+                        // y hace el toggle de sus respectivas columnas en la tabla
+                        function toggle5(source) {
+                            checkboxes = document.getElementsByClassName('checkbox_tab5');
+                            for(var i=0, n=checkboxes.length;i<n;i++) {
+                                checkboxes[i].checked = source.checked;
+                            }
+
+                            if (source.checked == true) {
+                                $("#OtrosTable tbody tr").show();
+                            } else {
+                                $("#OtrosTable tbody tr").hide();
+                            }
+                        }
+                    </script>
+
+                    <script>
+                        // verifica el estado de los checkboxs con clase 'checkbox_tab5',
+                        // si uno es false, cambia el valor del checkbox de 'seleccionar todos' a false
+                        // si todos son true, cambia el valor del checkbox de 'seleccionar todos' a true
+                        $("input[name='tab5']").change(function () {
+                            checkboxes = document.getElementsByClassName('checkbox_tab5');
+                            var value = true;
+                            for(var i=0, n=checkboxes.length;i<n;i++) {
+                                if (checkboxes[i].checked == false) {
+                                    value = false;
+                                }
+                            }
+                            $('#select-all_5').prop('checked', value);
+                        });
+                    </script>
+
+                    <!-- scripts para tab6 -->
+                    <script>
+                        // Filtro de tabla
+                        $("input[name='tab6']").change(function () {
+                            var classes = [];
+
+                            $("input[name='tab6']").each(function () {
+                                if ($(this).is(":checked")) { classes.push($(this).val()); }
+                            });
+
+                            if (classes == "") { // if no filters selected, show all items
+                                $("#EstDescriptivas tbody tr").hide();
+                            } else { // otherwise, hide everything...
+                                $("#EstDescriptivas tbody tr").hide();
+
+                                $("#EstDescriptivas tr").each(function () {
+                                    var show = false;
+                                    var row = $(this);
+                                    classes.forEach(function (className) {
+                                        if (row.find('td' + '.referencia').html() == className) { show = true; }
+                                    });
+                                    if (show) { row.show(); }
+                                });
+                            }
+                        });
+                    </script>
+
+                    <script>
+                        // cambia el valor de los checkboxs de clase 'checkbox_tab6'
+                        // de acuerdo con el valor del checkbox de 'seleccionar todos'
+                        // y hace el toggle de sus respectivas columnas en la tabla
+                        function toggle6(source) {
+                            checkboxes = document.getElementsByClassName('checkbox_tab6');
+                            for(var i=0, n=checkboxes.length;i<n;i++) {
+                                checkboxes[i].checked = source.checked;
+                            }
+
+                            if (source.checked == true) {
+                                $("#EstDescriptivas tbody tr").show();
+                            } else {
+                                $("#EstDescriptivas tbody tr").hide();
+                            }
+                        }
+                    </script>
+
+                    <script>
+                        // verifica el estado de los checkboxs con clase 'checkbox_tab6',
+                        // si uno es false, cambia el valor del checkbox de 'seleccionar todos' a false
+                        // si todos son true, cambia el valor del checkbox de 'seleccionar todos' a true
+                        $("input[name='tab6']").change(function () {
+                            checkboxes = document.getElementsByClassName('checkbox_tab6');
+                            var value = true;
+                            for(var i=0, n=checkboxes.length;i<n;i++) {
+                                if (checkboxes[i].checked == false) {
+                                    value = false;
+                                }
+                            }
+                            $('#select-all_6').prop('checked', value);
+                        });
+                    </script>
+
+                    <!-- Heatmaps -->
+                    <script>
+                        // Función para la generación de heat maps de correlación usando plotly
+                        function heatMap(graph_id, headers, values) {
+                            var data = [
+                              {
+                                x: headers, y: headers, z: values,
+
+                                xgap : 1, ygap : 1,
+                                type: 'heatmap', zmin: -1, zmax: 1,
+
+                                colorscale: [['0.000000000000', 'rgb(103,  0, 31)'], ['0.111111111111', 'rgb(178, 24, 43)'], ['0.222222222222', 'rgb(214, 96, 77)'], ['0.333333333333', 'rgb(244,165,130)'], ['0.444444444444', 'rgb(253,219,199)'], ['0.555555555556', 'rgb(209,229,240)'], ['0.666666666667', 'rgb(146,197,222)'], ['0.777777777778', 'rgb( 67,147,195)'], ['0.888888888889', 'rgb( 33,102,172)'], ['1.000000000000', 'rgb(  5, 48, 97)']],
+
+                                hoverongaps: false,
+                                hoverinfo: 'all',
+                                hovertemplate: "variable eje x: %{x}<br>variable eje y: %{y}<br>correlación: %{z}<extra></extra>"
+                              }
+                            ];
+                            var layout = {
+                                title: '',
+                                xaxis: {fixedrange: true, automargin: true, side: 'top'},
+                                yaxis: {fixedrange: true, automargin: true, autorange:"reversed"},
+
+                                showlegend: true, font: {size: 12},
+                                autosize: true, width:1055,
+                                margin: { l: 50, r: 50, b: 30, t: 50 }
+                            };
+
+                            try { Plotly.newPlot(graph_id, data, layout, {displayModeBar: false, responsive: true}); } catch (error) { }
+                        }
+
+                        heatMap('corre_pearson', ['nit_len'], [[1.0]]);
+                        heatMap('corre_kendall', ['nit_len'], [[1.0]]);
+                        heatMap('corre_spearman', ['nit_len'], [[1.0]]);
+                        heatMap('corre_cramer', ['fuente', 'nit_len'], [[1.0, 0.352], [0.352, 1.0]]);
+                        heatMap('corre_phik', ['fuente', 'nit_len'], [[1.0, 0.537], [0.537, 1.0]]);
+                    </script>
+
+                    <script>
+                        var heatmap_1 = document.getElementById('corre_pearson');
+                        var heatmap_2 = document.getElementById('corre_kendall');
+                        var heatmap_3 = document.getElementById('corre_spearman');
+                        var heatmap_4 = document.getElementById('corre_cramer');
+                        var heatmap_5 = document.getElementById('corre_phik');
+
+                        function resizeHeatmaps() {
+                            try { Plotly.Plots.resize(heatmap_1); } catch (error) { }
+                            try { Plotly.Plots.resize(heatmap_2); } catch (error) { }
+                            try { Plotly.Plots.resize(heatmap_3); } catch (error) { }
+                            try { Plotly.Plots.resize(heatmap_4); } catch (error) { }
+                            try { Plotly.Plots.resize(heatmap_5); } catch (error) { }
+                        }
+
+                        window.onload   = function() { resizeHeatmaps(); };
+                        window.onresize = function() { resizeHeatmaps(); };
+                        $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) { resizeHeatmaps(); });
+
+                        var scale = 'scale(1)';
+                        document.body.style.webkitTransform = scale;   // Chrome, Opera, Safari
+                        document.body.style.msTransform = scale;       // IE 9
+                        document.body.style.transform = scale;         // General
+                    </script>
+
+                    <script>
+                        // Mouse event handler - para el mouse over de la tabla Frecuencia de categorías
+                        $('#StatusTable').on('mouseover', 'tr', function() {
+                            var textToMatch = $(this).children(":first").text();
+
+                            $('tr').each(function() {
+                                var text = $(this).children(":first").text();
+
+                                if (textToMatch === text)
+                                    $(this).addClass('matching');
+                            });
+                        });
+
+                        $('#StatusTable').on('mouseout', 'tr', function() {
+                            $('.matching').removeClass('matching');
+                        });
+                    </script>
+
+                </div>
+                <div class="col-md-1"></div>
+            </div>
+        </div>
+    </body>
+</html>
