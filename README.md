@@ -3,6 +3,9 @@
 
 ![SNUIRA](snuira.jpg "SNUIRA")
 
+
+__(Proyecto en construcción)__
+
  Estructura de carpetas:
 
  * 01_Gestion :  Documentos de planificación y gestión de proyectos. Metodología
