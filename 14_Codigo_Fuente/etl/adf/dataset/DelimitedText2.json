@@ -1,0 +1,26 @@
+{
+	"name": "DelimitedText2",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "BD_PERSONAS_INSCRITAS_AL_PROGRAMA_TUNJA_TELETRABAJO.tab",
+				"folderPath": "OTROS/ALCALDIA_TUNJA/TELETRABAJO",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": "\t",
+			"rowDelimiter": "\n",
+			"encodingName": "UTF-16",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": []
+	}
+}

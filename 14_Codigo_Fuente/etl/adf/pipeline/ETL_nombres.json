@@ -1,0 +1,34 @@
+{
+	"name": "ETL_nombres",
+	"properties": {
+		"description": "ETL_nombres",
+		"activities": [
+			{
+				"name": "data_flow_dnp_nombres",
+				"description": "data_flow_dnp_nombres",
+				"type": "ExecuteDataFlow",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [],
+				"typeProperties": {
+					"dataflow": {
+						"referenceName": "data_flow_dnp_nombres",
+						"type": "DataFlowReference"
+					},
+					"compute": {
+						"coreCount": 8,
+						"computeType": "General"
+					},
+					"traceLevel": "Fine"
+				}
+			}
+		],
+		"annotations": []
+	}
+}

@@ -1,0 +1,22 @@
+{
+	"name": "DestinationDataset_dzt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "BD_PERSONAS_INSCRITAS_AL_PROGRAMA_TUNJA_TELETRABAJO.json",
+				"folderPath": "OTROS/ALCALDIA_TUNJA/TELETRABAJO",
+				"fileSystem": "raw"
+			},
+			"encodingName": "UTF-16",
+			"sheetName": "Hoja2"
+		},
+		"schema": {}
+	}
+}

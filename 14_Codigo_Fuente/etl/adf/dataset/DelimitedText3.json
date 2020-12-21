@@ -1,0 +1,30 @@
+{
+	"name": "DelimitedText3",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "BD_PERSONAS_TELETRABAJO.tsv",
+				"folderPath": "OTROS/ALCALDIA_TUNJA/TELETRABAJO",
+				"fileSystem": "raw"
+			},
+			"columnDelimiter": "\t",
+			"encodingName": "UTF-16",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "ID\tFecha\tNombres\tApellidos\tEdad\tGenero\tDiscapacidad\tTipo_discapacidad\tNivel_educacion\tIngles\tCursos\tInformatica\tCertificacion_competencias\tLaborando\tOrganizacion\tTeletrabajado\tInternet",
+				"type": "String"
+			}
+		]
+	}
+}

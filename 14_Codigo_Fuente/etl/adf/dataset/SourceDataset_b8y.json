@@ -1,0 +1,52 @@
+{
+	"name": "SourceDataset_b8y",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "RANGOS_CEDULA_2.csv",
+				"folderPath": "Entregable/Punto002"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "COD_NATURALEZA",
+				"type": "String"
+			},
+			{
+				"name": "NATURALEZA_JURIDICA",
+				"type": "String"
+			},
+			{
+				"name": "ROL",
+				"type": "String"
+			},
+			{
+				"name": "PERSONA",
+				"type": "String"
+			},
+			{
+				"name": "TIPO_DOCUMENTO",
+				"type": "String"
+			},
+			{
+				"name": "NUMERO_DOCUMENTO",
+				"type": "String"
+			},
+			{
+				"name": "RANGOS_CEDULA_SEXO",
+				"type": "String"
+			}
+		]
+	}
+}

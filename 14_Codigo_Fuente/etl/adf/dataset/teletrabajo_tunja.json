@@ -1,0 +1,22 @@
+{
+	"name": "teletrabajo_tunja",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Hoja1",
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "BASE_DE_DATOS_PERSONAS_INSCRITAS_AL_PROGRAMA_TUNJA_TELETRABAJO.xlsx",
+				"folderPath": "OTROS/ALCALDIA_TUNJA/TELETRABAJO",
+				"fileSystem": "raw"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": []
+	}
+}

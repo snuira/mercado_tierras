@@ -1,0 +1,18 @@
+{
+	"name": "SourceDataset_0md",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "TRANSACCIONES_INTERVINIENTES.json",
+				"folderPath": "Entregable/9024_LaboratorioSNUIRA"
+			}
+		}
+	}
+}

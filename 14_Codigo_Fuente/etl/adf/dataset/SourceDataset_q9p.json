@@ -1,0 +1,112 @@
+{
+	"name": "SourceDataset_q9p",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "RANGOS_VALOR_TRANSACCION_2.csv",
+				"folderPath": "Entregable/Punto001"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "COD_DPTO",
+				"type": "String"
+			},
+			{
+				"name": "COD_DANE",
+				"type": "String"
+			},
+			{
+				"name": "DEPARTAMENTO",
+				"type": "String"
+			},
+			{
+				"name": "MUNICIPIO",
+				"type": "String"
+			},
+			{
+				"name": "ORIP",
+				"type": "String"
+			},
+			{
+				"name": "VEREDA",
+				"type": "String"
+			},
+			{
+				"name": "MATRICULA",
+				"type": "String"
+			},
+			{
+				"name": "TIPO_PREDIO",
+				"type": "String"
+			},
+			{
+				"name": "NRO_ANOTACION",
+				"type": "String"
+			},
+			{
+				"name": "COD_NATURALEZA",
+				"type": "String"
+			},
+			{
+				"name": "NATURALEZA_JURIDICA",
+				"type": "String"
+			},
+			{
+				"name": "VALOR",
+				"type": "String"
+			},
+			{
+				"name": "DIRECCION",
+				"type": "String"
+			},
+			{
+				"name": "Divipola_Mun_0001",
+				"type": "String"
+			},
+			{
+				"name": "ZRE_NOMBRE",
+				"type": "String"
+			},
+			{
+				"name": "SISTEMA",
+				"type": "String"
+			},
+			{
+				"name": "NRO_PROPIETARIOS",
+				"type": "String"
+			},
+			{
+				"name": "ESTADO_FOLIO",
+				"type": "String"
+			},
+			{
+				"name": "A�O RADICACION",
+				"type": "String"
+			},
+			{
+				"name": "LINDERO",
+				"type": "String"
+			},
+			{
+				"name": "SMMLV",
+				"type": "String"
+			},
+			{
+				"name": "RANGOS_AVALUOS",
+				"type": "String"
+			}
+		]
+	}
+}

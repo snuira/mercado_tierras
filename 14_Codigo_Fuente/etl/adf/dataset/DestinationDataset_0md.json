@@ -1,0 +1,19 @@
+{
+	"name": "DestinationDataset_0md",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "TRANSACCIONES_INTERVINIENTES.json",
+				"folderPath": "OTROS/SNR/JSON",
+				"fileSystem": "raw"
+			}
+		}
+	}
+}

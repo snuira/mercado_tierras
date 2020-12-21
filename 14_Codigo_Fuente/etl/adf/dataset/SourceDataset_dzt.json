@@ -1,0 +1,90 @@
+{
+	"name": "SourceDataset_dzt",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Excel",
+		"typeProperties": {
+			"sheetName": "Hoja2",
+			"location": {
+				"type": "FileServerLocation",
+				"fileName": "BD_PERSONAS_INSCRITAS_AL_PROGRAMA_TUNJA_TELETRABAJO.xlsx",
+				"folderPath": "Entregable/otros/tunja"
+			},
+			"firstRowAsHeader": true
+		},
+		"schema": [
+			{
+				"name": "ID",
+				"type": "String"
+			},
+			{
+				"name": "Fecha",
+				"type": "String"
+			},
+			{
+				"name": "Nombres",
+				"type": "String"
+			},
+			{
+				"name": "Apellidos",
+				"type": "String"
+			},
+			{
+				"name": "Edad",
+				"type": "String"
+			},
+			{
+				"name": "Genero",
+				"type": "String"
+			},
+			{
+				"name": "Discapacidad",
+				"type": "String"
+			},
+			{
+				"name": "Tipo_discapacidad",
+				"type": "String"
+			},
+			{
+				"name": "Nivel_educacion",
+				"type": "String"
+			},
+			{
+				"name": "Ingles",
+				"type": "String"
+			},
+			{
+				"name": "Cursos",
+				"type": "String"
+			},
+			{
+				"name": "Informatica",
+				"type": "String"
+			},
+			{
+				"name": "Certificacion_competencias",
+				"type": "String"
+			},
+			{
+				"name": "Laborando",
+				"type": "String"
+			},
+			{
+				"name": "Organizacion",
+				"type": "String"
+			},
+			{
+				"name": "Teletrabajado",
+				"type": "String"
+			},
+			{
+				"name": "Internet",
+				"type": "String"
+			}
+		]
+	}
+}

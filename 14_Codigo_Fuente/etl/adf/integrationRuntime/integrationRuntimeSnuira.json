@@ -1,0 +1,7 @@
+{
+	"name": "integrationRuntimeSnuira",
+	"properties": {
+		"type": "SelfHosted",
+		"description": "integrationRuntimeSnuira"
+	}
+}

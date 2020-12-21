@@ -1,0 +1,63 @@
+{
+	"name": "Copy_SNR_Intervinientes",
+	"properties": {
+		"description": "Copy_SNR_Intervinientes",
+		"activities": [
+			{
+				"name": "Copy_0md",
+				"type": "Copy",
+				"dependsOn": [],
+				"policy": {
+					"timeout": "7.00:00:00",
+					"retry": 0,
+					"retryIntervalInSeconds": 30,
+					"secureOutput": false,
+					"secureInput": false
+				},
+				"userProperties": [
+					{
+						"name": "Source",
+						"value": "Entregable/9024_LaboratorioSNUIRA/TRANSACCIONES_INTERVINIENTES.json"
+					},
+					{
+						"name": "Destination",
+						"value": "raw/OTROS/SNR/JSON/TRANSACCIONES_INTERVINIENTES.json"
+					}
+				],
+				"typeProperties": {
+					"source": {
+						"type": "BinarySource",
+						"storeSettings": {
+							"type": "FileServerReadSettings",
+							"recursive": true
+						},
+						"formatSettings": {
+							"type": "BinaryReadSettings"
+						}
+					},
+					"sink": {
+						"type": "BinarySink",
+						"storeSettings": {
+							"type": "AzureBlobFSWriteSettings"
+						}
+					},
+					"enableStaging": false,
+					"validateDataConsistency": false
+				},
+				"inputs": [
+					{
+						"referenceName": "SourceDataset_0md",
+						"type": "DatasetReference"
+					}
+				],
+				"outputs": [
+					{
+						"referenceName": "DestinationDataset_0md",
+						"type": "DatasetReference"
+					}
+				]
+			}
+		],
+		"annotations": []
+	}
+}

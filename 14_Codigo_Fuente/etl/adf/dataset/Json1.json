@@ -1,0 +1,75 @@
+{
+	"name": "Json1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "AzureDataLakeStorage1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Json",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobFSLocation",
+				"fileName": "BD_PERSONAS_INSCRITAS_AL_PROGRAMA_TUNJA_TELETRABAJO.json",
+				"folderPath": "OTROS/ALCALDIA_TUNJA/TELETRABAJO",
+				"fileSystem": "raw"
+			}
+		},
+		"schema": {
+			"type": "object",
+			"properties": {
+				"ID": {
+					"type": "string"
+				},
+				"Fecha": {
+					"type": "string"
+				},
+				"Nombres": {
+					"type": "string"
+				},
+				"Apellidos": {
+					"type": "string"
+				},
+				"Edad": {
+					"type": "string"
+				},
+				"Genero": {
+					"type": "string"
+				},
+				"Discapacidad": {
+					"type": "string"
+				},
+				"Tipo_discapacidad": {
+					"type": "string"
+				},
+				"Nivel_educacion": {
+					"type": "string"
+				},
+				"Ingles": {
+					"type": "string"
+				},
+				"Cursos": {
+					"type": "string"
+				},
+				"Informatica": {
+					"type": "string"
+				},
+				"Certificacion_competencias": {
+					"type": "string"
+				},
+				"Laborando": {
+					"type": "string"
+				},
+				"Organizacion": {
+					"type": "string"
+				},
+				"Teletrabajado": {
+					"type": "string"
+				},
+				"Internet": {
+					"type": "string"
+				}
+			}
+		}
+	}
+}

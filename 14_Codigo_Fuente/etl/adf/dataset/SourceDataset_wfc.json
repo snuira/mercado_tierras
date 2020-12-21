@@ -1,0 +1,147 @@
+{
+	"name": "SourceDataset_wfc",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"folderPath": "Entregable/Punto004"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "CATASTRO",
+				"type": "String"
+			},
+			{
+				"name": "departamentonombre",
+				"type": "String"
+			},
+			{
+				"name": "municipionombre",
+				"type": "String"
+			},
+			{
+				"name": "departamento",
+				"type": "String"
+			},
+			{
+				"name": "municipio",
+				"type": "String"
+			},
+			{
+				"name": "COD_MUN",
+				"type": "String"
+			},
+			{
+				"name": "codigopredial",
+				"type": "String"
+			},
+			{
+				"name": "LARGO",
+				"type": "String"
+			},
+			{
+				"name": "CONDICION",
+				"type": "String"
+			},
+			{
+				"name": "prediosconmejoras",
+				"type": "String"
+			},
+			{
+				"name": "codigopredialcarto",
+				"type": "String"
+			},
+			{
+				"name": "Nro_Predio",
+				"type": "String"
+			},
+			{
+				"name": "CatastroPredio",
+				"type": "String"
+			},
+			{
+				"name": "tipoderegistro",
+				"type": "String"
+			},
+			{
+				"name": "direccion",
+				"type": "String"
+			},
+			{
+				"name": "destinoeconomico",
+				"type": "String"
+			},
+			{
+				"name": "AREATERRENO_m2",
+				"type": "String"
+			},
+			{
+				"name": "AREATERRENO_ha",
+				"type": "String"
+			},
+			{
+				"name": "Area_Cartografica_ha",
+				"type": "String"
+			},
+			{
+				"name": "MinUAF",
+				"type": "String"
+			},
+			{
+				"name": "MaxUAF",
+				"type": "String"
+			},
+			{
+				"name": "clasificacionUAF",
+				"type": "String"
+			},
+			{
+				"name": "tamanopredial5",
+				"type": "String"
+			},
+			{
+				"name": "tamanopredial16",
+				"type": "String"
+			},
+			{
+				"name": "areaconstruida",
+				"type": "String"
+			},
+			{
+				"name": "RANGOS_AVALUO",
+				"type": "String"
+			},
+			{
+				"name": "vigencia",
+				"type": "String"
+			},
+			{
+				"name": "vigencia_actual",
+				"type": "String"
+			},
+			{
+				"name": "matriculainmobiliaria",
+				"type": "String"
+			},
+			{
+				"name": "MATRICULA_DEPURADO",
+				"type": "String"
+			},
+			{
+				"name": "TIPO_MATRICULA",
+				"type": "String"
+			}
+		]
+	}
+}

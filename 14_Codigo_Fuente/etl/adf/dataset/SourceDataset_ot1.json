@@ -1,0 +1,17 @@
+{
+	"name": "SourceDataset_ot1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "FileServer1",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "Binary",
+		"typeProperties": {
+			"location": {
+				"type": "FileServerLocation",
+				"folderPath": "Entregable/Punto005/GEOJSON"
+			}
+		}
+	}
+}

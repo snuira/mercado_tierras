@@ -1,0 +1,68 @@
+{
+	"name": "data_flow_dnp_nombres",
+	"properties": {
+		"description": "data_flow_dnp_nombres",
+		"type": "MappingDataFlow",
+		"typeProperties": {
+			"sources": [
+				{
+					"dataset": {
+						"referenceName": "conTexto_nombres_mujeres",
+						"type": "DatasetReference"
+					},
+					"name": "source1"
+				},
+				{
+					"dataset": {
+						"referenceName": "conTexto_nombres_hombres",
+						"type": "DatasetReference"
+					},
+					"name": "source2"
+				},
+				{
+					"dataset": {
+						"referenceName": "Excel1",
+						"type": "DatasetReference"
+					},
+					"name": "source3"
+				}
+			],
+			"sinks": [
+				{
+					"dataset": {
+						"referenceName": "dnp_contexto_genero",
+						"type": "DatasetReference"
+					},
+					"name": "sink1"
+				}
+			],
+			"transformations": [
+				{
+					"name": "DerivedColumn2"
+				},
+				{
+					"name": "DerivedColumn3"
+				},
+				{
+					"name": "Union1"
+				},
+				{
+					"name": "DerivedColumn4"
+				},
+				{
+					"name": "DerivedColumn5"
+				},
+				{
+					"name": "Select1"
+				},
+				{
+					"name": "Union2"
+				},
+				{
+					"name": "DerivedColumn6"
+				}
+			],
+			"script": "source(output(\n\t\tNOMBRE as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> source1\nsource(output(\n\t\tNOMBRE as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> source2\nsource(output(\n\t\tID as string,\n\t\tFecha as string,\n\t\tNombres as string,\n\t\tApellidos as string,\n\t\tEdad as string,\n\t\tGenero as string,\n\t\tDiscapacidad as string,\n\t\tTipo_discapacidad as string,\n\t\tNivel_educacion as string,\n\t\tIngles as string,\n\t\tCursos as string,\n\t\tInformatica as string,\n\t\tCertificacion_competencias as string,\n\t\tLaborando as string,\n\t\tOrganizacion as string,\n\t\tTeletrabajado as string,\n\t\tInternet as string\n\t),\n\tallowSchemaDrift: true,\n\tvalidateSchema: false,\n\tignoreNoFilesFound: false) ~> source3\nsource1 derive(GENERO = \"FEMENINO\") ~> DerivedColumn2\nsource2 derive(GENERO = \"MASCULINO\") ~> DerivedColumn3\nDerivedColumn2, DerivedColumn3 union(byName: true)~> Union1\nUnion1 derive(FUENTE = \"DNP CONTEXTO\") ~> DerivedColumn4\nsource3 derive(FUENTE = \"TUNJA\") ~> DerivedColumn5\nDerivedColumn5 select(mapColumn(\n\t\tNOMBRE = Nombres,\n\t\tGENERO = Genero,\n\t\tFUENTE\n\t),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> Select1\nDerivedColumn4, Select1 union(byName: true)~> Union2\nUnion2 derive(NOMBRE = trim(upper(NOMBRE)),\n\t\tGENERO = trim(upper(GENERO)),\n\t\tULTIMA_LETRA = upper(substring( reverse(trim(NOMBRE)) , 1, 1)  )) ~> DerivedColumn6\nDerivedColumn6 sink(allowSchemaDrift: true,\n\tvalidateSchema: false,\n\tpartitionFileNames:['nombres_unificados.csv'],\n\ttruncate: true,\n\tpartitionBy('hash', 1),\n\tskipDuplicateMapInputs: true,\n\tskipDuplicateMapOutputs: true) ~> sink1"
+		}
+	}
+}
