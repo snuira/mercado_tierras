@@ -1,5 +1,12 @@
 # Fases de Análisis
 
+Las fases de análisis que se establecieron a lo largo del proyecto son:
+
+- [1.Transacciones](#1.	Transacciones)
+- [2.Intervinientes](#2.	Intervinientes)
+- [3.Linderos](#3.	Linderos)
+- [4.Catastro R1R2](#4.	Catastro R1R2)
+- [5.Componente Geográfico](#5.	Componente Geográfico)
 
 ## 1.	Transacciones
 

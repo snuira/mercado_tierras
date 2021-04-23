@@ -38,7 +38,6 @@ __(Proyecto en construcción)__
 * [06 - Preparación de datos](06_Preparacion_Datos)
 * 07_Validacion_Datos: Validación de datos
 * 08_Analisis: Análisis de datos
-*  * 08_01_Modelos: Modelos de análisis
 * 09_Automatizacion: Automatización de modelos analíticos
 * 10_Validacion_Evaluacion_Modelos: Validación y evaluación de los modelos analíticos
 * 11_Publicacion_Modelos: Publicación de modelos y resultados
