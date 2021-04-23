@@ -2,12 +2,13 @@
 
 Las fases de análisis que se establecieron a lo largo del proyecto son:
 
-- [1.Transacciones](1.	Transacciones)
-- [2.Intervinientes](2.	Intervinientes)
-- [3.Linderos](3.	Linderos)
-- [4.Catastro R1R2](4.	Catastro R1R2)
-- [5.Componente Geográfico](5.	Componente Geográfico)
+1. [Transacciones](Transacciones)
+2. [Intervinientes](Intervinientes)
+3. [Linderos](Linderos)
+4. [Catastro R1R2](R1R2)
+5. [Componente Geográfico](c_geo)
 
+<a name="Transacciones"></a>
 ## 1.	Transacciones
 
 
@@ -31,11 +32,14 @@ Dentro de los principales pasos de diagrama de flujo de la temática de Transacc
 
 *    Se generan y consolidan dos archivos de gran importancia para los siguientes procesos: Archivo de Transacciones Rurales y Linderos Rurales.
 
-
+<a name="Intervinientes"></a>
 ## 2.	Intervinientes
 
+<a name="Linderos"></a>
 ## 3.	Linderos
 
+<a name="R1R2"></a>
 ## 4.	Catastro R1R2
 
+<a name="c_geo"></a>
 ## 5.	Componente Geográfico
