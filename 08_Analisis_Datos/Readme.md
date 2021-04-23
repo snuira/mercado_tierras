@@ -2,11 +2,11 @@
 
 Las fases de análisis que se establecieron a lo largo del proyecto son:
 
-1. [Transacciones](Transacciones)
-2. [Intervinientes](Intervinientes)
-3. [Linderos](Linderos)
-4. [Catastro R1R2](R1R2)
-5. [Componente Geográfico](c_geo)
+1. [Transacciones](#Transacciones)
+2. [Intervinientes](#Intervinientes)
+3. [Linderos](#Linderos)
+4. [Catastro R1R2](#R1R2)
+5. [Componente Geográfico](#c_geo)
 
 <a name="Transacciones"></a>
 ## 1.	Transacciones
