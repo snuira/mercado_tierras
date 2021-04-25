@@ -100,5 +100,19 @@ Dentro de la fase correspondiente a Linderos se encuentran los siguientes proces
 <a name="R1R2"></a>
 ## 4.	Catastro R1R2
 
+![CatastroR1R2](Diagrama_Analisis_r1r2.png "CatastroR1R2")
+
+Los principales procesos llevados a cabo en la fase análisis del Catasro R1 R2 estan los siguientes:
+
+*    Realizar la conversión del archivo JSON de tipo Single-Line en el cual originalmente provienen los datos de Catastro R1R2 luego de exportarlos desde el software SAS a un formato JSON – Multiline. Esto debido a todos los inconvenientes ya mencionados en la fase de Transacciones donde ocurría exactamente el mismo problema especialmente en la lectura y manipulación de los datos.
+
+*    Unificar los conjuntos de datos de Catastro R1 R2 para cada una de las vigencias (2015 a 2019) con el fin de obtener una consolidación de estos registros y por tanto se adecuen los datos para subsecuentes procesos. Seguidamente se procede a generar reportes de perfiles de datos mediante técnicas de Sampling debido a la gran cantidad de registros que se generar al unificar las vigencias.
+
+*    Realizar la unión o “join” entre las Transacciones Rurales obtenidas en la primera fase con el catastro R1R2 alfanumérico ya unificado.  Esta operación se caracteriza porque se tienen en cuenta únicamente en la tabla resultante el primer año de cruce entre el año en que se radicó la transacción y el primer año en que aparece registrada en Catastro R1 R2. Esto quiere decir que una transacción pudo haberse realizado en el año 2015 pero el primer año en el que encuentra su equivalencia en catastro puede ser 2018. 
+
+*    Una vez este cruce de gran importancia es efectuado, se genera un archivo consolidado de este cruce entre las transacciones rurales y la información de catastro R1 R2 en distintos formatos: .parquet, .JSON y .tsv. Finalmente el archivo consolidado es denominado R12 Transacciones Rurales.
+
+
+
 <a name="c_geo"></a>
 ## 5.	Componente Geográfico
