@@ -11,8 +11,9 @@ Las fases de análisis que se establecieron a lo largo del proyecto son:
 <a name="Transacciones"></a>
 ## 1.	Transacciones
 
-
-![Transacciones](Diagrama_Analisis_Transacciones.png "Transacciones")
+<p align="center">
+ <img src="Diagrama_Analisis_Transacciones_.png">
+</p>
 
 Dentro de los principales pasos del diagrama de flujo de la temática de Transacciones están:
 
