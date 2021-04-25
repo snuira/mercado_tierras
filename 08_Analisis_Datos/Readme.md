@@ -106,7 +106,7 @@ Dentro de la fase correspondiente a Linderos se encuentran los siguientes proces
 ## 4.	Catastro R1R2
 
 <p align="center">
- <img src="Diagrama_Analisis_r1r2.png.png">
+ <img src="Diagrama_Analisis_r1r2.png">
 </p>
 
 Los principales procesos llevados a cabo en la fase análisis del Catasro R1 R2 estan los siguientes:
