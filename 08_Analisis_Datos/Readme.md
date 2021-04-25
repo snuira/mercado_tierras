@@ -105,7 +105,9 @@ Dentro de la fase correspondiente a Linderos se encuentran los siguientes proces
 <a name="R1R2"></a>
 ## 4.	Catastro R1R2
 
-![CatastroR1R2](Diagrama_Analisis_r1r2.png "CatastroR1R2")
+<p align="center">
+ <img src="Diagrama_Analisis_r1r2.png.png">
+</p>
 
 Los principales procesos llevados a cabo en la fase análisis del Catasro R1 R2 estan los siguientes:
 
@@ -121,3 +123,23 @@ Los principales procesos llevados a cabo en la fase análisis del Catasro R1 R2 
 
 <a name="c_geo"></a>
 ## 5.	Componente Geográfico
+
+<p align="center">
+ <img src="Diagrama_Analisis_Geografico.png">
+</p>
+
+Dentro del análisis realizado con los datos que tienen un componente geoespacial se tienen los siguientes procesos:
+
+*    Conversión del formato propietario de ESRI en el cual vienen las bases de datos geográficas de catastro para las diferentes vigencias a un formato abierto. Esta conversión también se realizó para la información relacionada a los precios del mercado de tierras y el área efectiva (incluidos y condicionados) del mercado de tierras. Esta conversión es llevada a cabo desde el software ArcGIS Pro
+
+*    Debido a la anterior conversión es necesario realizar una reparación geométrica y/o topológica de todas las capas geográficas en cuestión. Esto debido a que se evidencian inconsistencias en estas capas geográficas cuando se almacena información en formatos como shapefile (.shp)o  geopackage (.pgkg). De la misma forma, esta reparación es llevada a cabo desde el software ArcGIS Pro.
+
+*    Una vez las geometrías has sido reparadas, se procede a realizar la conversión de las capas geográficas a formato WKT (Well-known Text) desde el software QGIS utilizando la librería gdal. Generados estos WKT para cada una de las capas geográficas, se suben los archivos en la nube de Azure para su posterior procesamiento.
+
+*    Unificación de los conjuntos de datos correspondientes a la información geográfica de catastro para las diferentes vigencias que ya se almacenaron en la nube de Azure.  
+
+*    Realizar el filtrado de la base de datos geográfica unificada seleccionando únicamente aquellos predios que tuvieron algún tipo de transacción rural. En este orden de ideas la operación de tipo “join” se desarrolla teniendo en cuenta las mismas consideraciones de la unificación que se dio en la fase del catastro R1 R2 en donde los registros de salida corresponderán únicamente al primer año de cruce. 
+
+*    Realizar el cálculo de los centroides de cada uno de los predios rurales que fueron objetos de transacción inmobiliaria. Posteriormente se procede a añadir la información de precios de mercado de tierras y áreas efectivas del mercado de tierras al incluir campos que confirmen la predominancia espacial de estas zonas en cada uno de los predios.
+
+*    Al tener el archivo con los atributos suficientes y necesarios, se genera un nuevo archivo WKT y una posterior tabla organizada en .csv y/o JSON que va a servir como insumo para la generación de reportes y tableros de control.
