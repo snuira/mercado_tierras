@@ -84,6 +84,19 @@ Detallando el procesamiento desarrollado en la temática de Intervinientes se en
 <a name="Linderos"></a>
 ## 3.	Linderos
 
+![Linderos](Diagrama_Analisis_Linderos.png "Linderos")
+
+Dentro de la fase correspondiente a Linderos se encuentran los siguientes procesos:
+
+*    Limpieza del campo que contiene el texto explicito de “linderos” desde el conjunto de datos de Linderos Rurales que fue inicialmente obtenido luego de aplicar los procesos de la fase de Transacciones. Esta limpieza es necesaria realizarla ya que el campo no guarda ningún orden u formato de ingreso para los linderos. Se considera como un campo de texto libre.
+
+*    Realizar el conteo de ocurrencias en cada uno de los registros del campo Linderos de palabras consideradas como clave para poder subsecuentemente realizar la extracción del valor del área del predio transado en caso de existir. Dentro de las palabras claves consideradas con el respaldo del grupo temática del Mercado de Tierra se encuentran: Área, Cabida, Superficie, y Extensión.
+
+*    Aplicación de algoritmos basados en expresiones regulares que se encarguen de extraer el valor tanto del área como de las correspondientes unidades. Para ello se extraen basándose en el siguiente patron: **Palabra_Inicio - Valor - Unidad**. En donde la Palabra_Inicio corresponde a cualquier de las palabras clave indicada previamente y Unidad tomaría el valor de cualquiera de las siguientes opciones: Hectáreas, metros, fanegadas, cuadras, plazas y varas.
+
+*    Una vez se han extraído los valores según el patrón mencionado se organizan los datos en nuevas columnas para área y las unidades respectivas; luego se realiza el conteo de los registros de los cuales fueron posibles extraer ambos valores de forma satisfactoria. Finalmente se procede a establecer un archivo para la generación de reportes.
+
+
 <a name="R1R2"></a>
 ## 4.	Catastro R1R2
 
