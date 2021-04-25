@@ -84,7 +84,9 @@ Detallando el procesamiento desarrollado en la temática de Intervinientes se en
 <a name="Linderos"></a>
 ## 3.	Linderos
 
-![Linderos](Diagrama_Analisis_Linderos_.png "Linderos")
+<p align="center">
+ <img src="Diagrama_Analisis_Linderos_.png">
+</p>
 
 Dentro de la fase correspondiente a Linderos se encuentran los siguientes procesos:
 
