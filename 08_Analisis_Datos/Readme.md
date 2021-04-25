@@ -35,7 +35,9 @@ Dentro de los principales pasos del diagrama de flujo de la temática de Transac
 <a name="Intervinientes"></a>
 ## 2.	Intervinientes
 
-![Intervinientes](Diagrama_Analisis_Intervinientes.png "Intervinientes")
+<p align="center">
+ <img src="Diagrama_Analisis_Intervinientes.png">
+</p>
 
 Detallando el procesamiento desarrollado en la temática de Intervinientes se encuentran los siguientes pasos:
 
