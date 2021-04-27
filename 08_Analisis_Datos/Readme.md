@@ -1,12 +1,12 @@
-# Fases de Análisis
+# Análisis y procesamiento de datos
 
-Las fases de análisis que se establecieron a lo largo del proyecto son:
 
-1. [Transacciones](#Transacciones)
-2. [Intervinientes](#Intervinientes)
-3. [Linderos](#Linderos)
-4. [Catastro R1R2](#R1R2)
-5. [Componente Geográfico](#c_geo)
+- [Análisis y procesamiento de datos](#análisis-y-procesamiento-de-datos)
+	- [1.	Transacciones](#1transacciones)
+	- [2.	Intervinientes](#2intervinientes)
+	- [3.	Linderos](#3linderos)
+	- [4.	Catastro R1R2](#4catastro-r1r2)
+	- [5.	Componente Geográfico](#5componente-geográfico)
 
 <a name="Transacciones"></a>
 ## 1.	Transacciones
