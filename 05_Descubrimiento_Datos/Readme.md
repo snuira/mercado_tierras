@@ -8,6 +8,13 @@
       - [Catastro alfanumérico](#catastro-alfanumérico)
       - [Catastro geográfico](#catastro-geográfico)
     - [Conjuntos de datos secundarios](#conjuntos-de-datos-secundarios)
+      - [Destinos económicos de catastro](#destinos-económicos-de-catastro)
+      - [UPRA - Predios campestres](#upra---predios-campestres)
+      - [UPRA - Precios Mercado de Tierras](#upra---precios-mercado-de-tierras)
+      - [UPRA - Ruralidad](#upra---ruralidad)
+      - [UPRA - Frontera Agrícula](#upra---frontera-agrícula)
+      - [UPRA - UPA](#upra---upa)
+      - [UPRA - Aptitud](#upra---aptitud)
       - [Divipola -  DANE](#divipola----dane)
       - [Directorio Estadístico de Empresas -  DANE](#directorio-estadístico-de-empresas----dane)
       - [Base de datos personas inscritas al programa Tunja teletrabajo ( Alcaldía de Tunja )](#base-de-datos-personas-inscritas-al-programa-tunja-teletrabajo--alcaldía-de-tunja-)
@@ -141,7 +148,33 @@
 
 ### Conjuntos de datos secundarios
 
+#### Destinos económicos de catastro
 
+* Contenido: Clasificación de los destinos económicos asociados a los terrenos de catastro 
+
+#### UPRA - Predios campestres
+
+* Contenido: Predios clasificados por la UPRA bajo la categoría de "Campestres".
+
+#### UPRA - Precios Mercado de Tierras
+
+* Contenido: Capa geográfica con información de mercado de precios recopilada por la UPRA
+
+#### UPRA - Ruralidad
+
+* Contenido: Capa geográfica con información de municipios clasificados según ruralidad 
+
+#### UPRA - Frontera Agrícula
+
+* Contenido: Capa geográfica con información de la frontera agrícola especificada por la UPRA. 
+
+#### UPRA - UPA
+
+* Contenido: Capa geográfica con información de las  unidades productivas agropecuarias definidas por la UPRA
+
+#### UPRA - Aptitud
+
+* Contenido: Capa geográfica con información de aptitud del suelo definida por la UPRA.
 
 #### Divipola -  DANE
 
