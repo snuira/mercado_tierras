@@ -25,8 +25,8 @@
 * Cantidad de registros:  
 
   * Archivo versión 1: 4.194.049 
-
   * Archivo versión 2: 1.634.294 
+  * Archivo versión 3: 4.894.440
 
 * Tipos de datos:  
 
@@ -50,6 +50,7 @@
   * DIRECCION	: Dirección del predio	
   * SISTEMA	 : Sistema de información desde donde provienen los datos
   * LINDERO : Información del lindero asociado a la transacción
+  * VALOR: Valor de la transacción
 
 * Velocidad de los datos: La información es recibida por la UPRA de forma anual 
 

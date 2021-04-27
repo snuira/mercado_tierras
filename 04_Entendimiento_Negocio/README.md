@@ -1,5 +1,13 @@
 # Entendimiento de Negocio
 
+- [Entendimiento de Negocio](#entendimiento-de-negocio)
+  - [Área de Negocio:](#área-de-negocio)
+  - [Descripción del problema](#descripción-del-problema)
+  - [Evidencia de existencia del problema](#evidencia-de-existencia-del-problema)
+  - [Motivación de la entidad en resolver el problema](#motivación-de-la-entidad-en-resolver-el-problema)
+  - [Objetivo del negocio](#objetivo-del-negocio)
+  - [Solución actual del problema de negocio](#solución-actual-del-problema-de-negocio)
+
 El entendimiento de negocio busca realizar una caracterización del problema y del estado del negocio actual con el fin de tener un entendimiento integro de los procedimientos, metodologías y protocolos existentes en el acceso, manipulación y disposición de la información.
 
 ## Área de Negocio:
