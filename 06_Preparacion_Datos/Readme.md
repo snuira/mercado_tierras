@@ -1,7 +1,15 @@
 # Preparación 
 
+- [Preparación](#preparación)
+  - [Preparación de entorno](#preparación-de-entorno)
+    - [Servicios en la Nube pública de Microsoft Azure](#servicios-en-la-nube-pública-de-microsoft-azure)
+    - [Infraestructura en el centro de datos de la UPRA](#infraestructura-en-el-centro-de-datos-de-la-upra)
+  - [Preparación de Datos](#preparación-de-datos)
 
-## Servicios en la Nube pública de Microsoft Azure 
+## Preparación de entorno
+
+
+### Servicios en la Nube pública de Microsoft Azure 
 
 A través de la iniciativa “Data Sandbox”2  de MINTIC el proveedor Bextsa aprovisionó los siguientes recursos en la nube de Microsoft Azure:  
 
@@ -37,7 +45,7 @@ Para el procesamiento de entrenamiento de los modelos creados en Azure Machine L
 
 *    Un nodo dedicado STANDARD_D2_V2 (2 Cores, 7 GB RAM, 100 GB Disk) de tipo CPU General purpose. 
 
-## Infraestructura en el centro de datos de la UPRA 
+### Infraestructura en el centro de datos de la UPRA 
 
 Para facilitar el movimiento de datos entre el centro de datos de la UPRA y la nube de Azure se dispuso de una máquina virtual con las siguientes características:  
 
@@ -52,7 +60,7 @@ Para facilitar el movimiento de datos entre el centro de datos de la UPRA y la n
 En dicha máquina se instaló la aplicación “Azure Data Factory Integration Runtime” la cual tiene como prerrequisito el entorno de Microsoft .NET Framework 4.6.2. 
 
 
-## Datos
+## Preparación de Datos
 
 Durante la preparación de los datos se realizaron los siguientes procesos: 
 
