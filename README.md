@@ -26,9 +26,7 @@ Para materializar la arquitectura propuesta se propone un primer proyecto piloto
 
 ##  Contenido del repositorio
 
-__(Proyecto en construcción)__
-
- Estructura de carpetas:
+Estructura de carpetas:
 
 * [01 - Gestion - Documentos de planificación y gestión de proyectos. Metodología](01_Gestion)
 * [02 - Arquitectura del sistema](02_Arquitectura)

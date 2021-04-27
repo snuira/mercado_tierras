@@ -2,21 +2,26 @@
 
 - [Descubrimiento de datos](#descubrimiento-de-datos)
   - [Descripción de los datos](#descripción-de-los-datos)
-    - [Transacciones inmobiliarias de la SNR](#transacciones-inmobiliarias-de-la-snr)
-    - [Intervinientes en transacciones inmobiliarias de la SNR](#intervinientes-en-transacciones-inmobiliarias-de-la-snr)
-    - [Información geográfica y alfanumérica del catastro colombiano (R1, R2)](#información-geográfica-y-alfanumérica-del-catastro-colombiano-r1-r2)
-    - [Divipola -  DANE](#divipola----dane)
-    - [Directorio Estadístico de Empresas -  DANE](#directorio-estadístico-de-empresas----dane)
-    - [Base de datos personas inscritas al programa Tunja teletrabajo ( Alcaldía de Tunja )](#base-de-datos-personas-inscritas-al-programa-tunja-teletrabajo--alcaldía-de-tunja-)
-    - [SECOP I y II](#secop-i-y-ii)
-    - [Nombres de empresas - datos.gov.co](#nombres-de-empresas---datosgovco)
-    - [DNP  - ConTexto](#dnp----contexto)
+    - [Conjuntos de datos principales](#conjuntos-de-datos-principales)
+      - [Transacciones inmobiliarias de la SNR](#transacciones-inmobiliarias-de-la-snr)
+      - [Intervinientes en transacciones inmobiliarias de la SNR](#intervinientes-en-transacciones-inmobiliarias-de-la-snr)
+      - [Catastro alfanumérico](#catastro-alfanumérico)
+      - [Catastro geográfico](#catastro-geográfico)
+    - [Conjuntos de datos secundarios](#conjuntos-de-datos-secundarios)
+      - [Divipola -  DANE](#divipola----dane)
+      - [Directorio Estadístico de Empresas -  DANE](#directorio-estadístico-de-empresas----dane)
+      - [Base de datos personas inscritas al programa Tunja teletrabajo ( Alcaldía de Tunja )](#base-de-datos-personas-inscritas-al-programa-tunja-teletrabajo--alcaldía-de-tunja-)
+      - [SECOP I y II](#secop-i-y-ii)
+      - [Nombres de empresas - datos.gov.co](#nombres-de-empresas---datosgovco)
+      - [DNP  - ConTexto](#dnp----contexto)
   - [Perfilamiento de datos](#perfilamiento-de-datos)
 
 
 ## Descripción de los datos
 
-### Transacciones inmobiliarias de la SNR 
+### Conjuntos de datos principales
+
+#### Transacciones inmobiliarias de la SNR 
 
 * Contenido:  Datos con información de transacciones registrales realizadas ante la SNR tanto en sectores rurales como urbanos 
 
@@ -31,8 +36,8 @@
 * Tipos de datos:  
 
   * Archivo versión 1: Número de variables: 19 
-
   * Archivo versión 2:  Número de variables: 22 
+  * Archivo versión 3:  Número de variables: 20 
 
 * Atributos
 
@@ -62,7 +67,7 @@
 
 
 
-### Intervinientes en transacciones inmobiliarias de la SNR 
+#### Intervinientes en transacciones inmobiliarias de la SNR 
 
 * Contenido: Intervinientes (personas o empresas) en las transaccciones inmobiliarias registradas por la SNR.  
 
@@ -71,14 +76,14 @@
 * Cantidad de registros:  
 
     * Archivo versión 1: 5.985.303 
-
     * Archivo versión 2: 5.985.303 
+    * Archivo versión 3: 10.908.666
 
 * Tipos de datos:  
 
   * Archivo versión 1:  Número de variables: 7 
-
   * Archivo versión 2:  Número de variables: 12 
+  * Archivo versión 3:  Número de variables: 10 
 
 * Atributos:
   
@@ -102,31 +107,62 @@
 
 * Valor: A través de este conjunto de datos puede estimarse la cantidad y tipo de intervinientes en las transacciones del mercado inmobiliario en el sector rural. 
 
+#### Catastro alfanumérico
 
-### Información geográfica y alfanumérica del catastro colombiano (R1, R2) 
+* Contenido: Información alfanumérica del catastro de Colombia
 
-*    Contenido: Información de tipo físico de todos los predios de Colombia proveniente de los diferentes entes encargados de la gestión de catastro. 
+* Tipo de conjunto de datos: Alfanumérico, Estructurada. 
 
-### Divipola -  DANE
+* Cantidad de registros:  21.205.861​
+
+* Cantidad de atributos: 32
+
+* Atributos significativos:
+  * MATRICULA_DEPURADO: Número de matrícula predial
+  * AREATERRENO_ha: Área de terreno en hectáreas
+  * codigopredialcarto: Código predial para cruce de datos geográficos
+  * destinoeconomico: destino económico 
+
+
+#### Catastro geográfico
+
+* Contenido: Información geográfica del catastro de Colombia
+
+* Tipo de conjunto de datos: Geográfico, Alfanumérico, Estructurado. 
+
+* Cantidad de registros:  18.154.322
+
+* Cantidad de atributos: 6
+
+* Atributos significativos:
+  * AREATERRENO_ha: Área de terreno en hectáreas calculada a partir de la geometría
+  * CODIGO_PREDIAL_TOTAL: Código predial para cruce de datos geográficos
+  * areaconstruida: Área construída del predio 
+
+### Conjuntos de datos secundarios
+
+
+
+#### Divipola -  DANE
 
 * Contenido: División político administrativa oficial del país
 
-### Directorio Estadístico de Empresas -  DANE 
+#### Directorio Estadístico de Empresas -  DANE 
 
 * Contenido : El Directorio Estadístico de Empresas contiene información sobre la identificación y ubicación de todas las empresas, con sus establecimientos y activas en el territorio nacional.   
 
 
-###     Base de datos personas inscritas al programa Tunja teletrabajo ( Alcaldía de Tunja )
+####    Base de datos personas inscritas al programa Tunja teletrabajo ( Alcaldía de Tunja )
 
 * Contenido:  En el portal de datos abiertos se encontró esta base de datos que contiene nombres de personas clasificados por género (másculino, femenino). Url: https://www.datos.gov.co/Ciencia-Tecnolog-a-e-Innovaci-n/BASE-DE-DATOS-PERSONAS-INSCRITAS-AL-PROGRAMA-TUNJA/cnce-pr7n  
 
 
-### SECOP I y II
+#### SECOP I y II
 
 * Contenido: Se encuentra la información de los procesos contractuales ejecutados por entidades del estado.  De este conjunto de datos se tomaron los nombres de las empresas que intervinieron  en dichos contratos.
 
 
-### Nombres de empresas - datos.gov.co
+#### Nombres de empresas - datos.gov.co
 
 * Contenido: Nombres de empresas colombianas extraídas a partir de datos recopilados desde datos.gov.co : 
   * 1000 Empresas mas grandes del país	https://www.datos.gov.co/Econom-a-y-Finanzas/1000-Empresas-mas-grandes-del-pa-s/8hn7-rpp8	
@@ -138,7 +174,7 @@
 
 
 
-### DNP  - ConTexto
+#### DNP  - ConTexto
 
 ConTexto: En el repositorio github de la librería ConTexto (https://github.com/ucd-dnp/ConTexto/tree/master/contexto/data/listas_stopwords) se encontraron los siguientes conjuntos de datos: 
 
