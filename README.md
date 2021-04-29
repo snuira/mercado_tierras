@@ -38,8 +38,8 @@ Estructura de carpetas:
 * [08 - Analisis: Análisis y procesamiento de datos](08_Analisis_Datos)
 * 09_Automatizacion: Automatización de modelos analíticos
 * 10_Validacion_Evaluacion_Modelos: Validación y evaluación de los modelos analíticos
-* 11_Publicacion_Modelos: Publicación de modelos y resultados
-* 12_Lecciones_Aprendidas: Lecciones aprendidas y recomendaciones
+* [11 - Publicación de resultados](11_Publicacion)
+* [12 - Lecciones aprendidas y recomendaciones](12_Lecciones_Aprendidas)
 * [13 - Ejemplos de datos](13_Datos)
 * [14 - Codigo fuente](14_Codigo_Fuente)
 
