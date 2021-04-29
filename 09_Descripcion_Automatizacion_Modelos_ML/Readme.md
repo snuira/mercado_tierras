@@ -54,7 +54,7 @@ La selección del modelo más adecuado para realizar esta clasificación se fund
 *    Aunque ninguno de estos algoritmos mencionados ha sido diseñado para ser aplicado en la clasificación de genero basado en nombres en español, fundamentan su aplicación para el primer nombre de una persona e implementan una extracción de características (_feature extraction_) muy importantes a la hora de evaluar los nombres de una persona para identificar el género. Dentro de esta extracción se encuentra la evaluación de cada una de las primeras tres letras y las tres últimas letras del nombre.
 
 <p align="center">
- <img src="decision_treest.png">
+ <img src="decision_trees.png">
 </p>
 <p align="center">Tomado de https://nlpforhackers.io/introduction-machine-learning/</p>
 
