@@ -34,7 +34,7 @@ Estructura de carpetas:
 * [04 - Entendimiento del negocio](04_Entendimiento_Negocio)
 * [05 - Descubrimiento de datos](05_Descubrimiento_Datos)
 * [06 - Preparación de datos](06_Preparacion_Datos)
-* 07_Validacion_Datos: Validación de datos
+* [07 - Validación de datos](07_Validacion_Datos)
 * [08 - Analisis: Análisis y procesamiento de datos](08_Analisis_Datos)
 * 09_Automatizacion: Automatización de modelos analíticos
 * 10_Validacion_Evaluacion_Modelos: Validación y evaluación de los modelos analíticos
