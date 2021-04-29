@@ -1,5 +1,13 @@
 # Validación de datos
 
+- [Validación de datos](#validación-de-datos)
+  - [Disponibilidad y oportunidad de acceso a los datos](#disponibilidad-y-oportunidad-de-acceso-a-los-datos)
+  - [Formato de transferencia de datos](#formato-de-transferencia-de-datos)
+  - [Estructura de los datos](#estructura-de-los-datos)
+  - [Consistencia](#consistencia)
+  - [Registros repetidos (De-duplicación)](#registros-repetidos-de-duplicación)
+  - [Contenido](#contenido)
+
 Durante las fases del proyecto de descubrimiento y preparación de datos fue necesario realizar diferentes procesos de validación apoyados 
 por herramientas tales como el perfilamiento de datos y la generación de reportes.
 
