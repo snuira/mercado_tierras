@@ -4,7 +4,8 @@
   - [Conjuntos de datos](#conjuntos-de-datos)
   - [Entrega de resultados a usuarios](#entrega-de-resultados-a-usuarios)
   - [Modelamiento en PowerBI](#modelamiento-en-powerbi)
-  - [Visualización y tableros de control](#visualización-y-tableros-de-control)
+  - [Prototipado de visualización](#prototipado-de-visualización)
+  - [Visualización de datos y tableros de control utilizando PowerBI](#visualización-de-datos-y-tableros-de-control-utilizando-powerbi)
 
 ## Conjuntos de datos 
 
@@ -44,13 +45,24 @@ En la imagen a continuación puede visualizarse parte del modelo creado:
 ![SNUIRA](pbi1.jpg "SNUIRA")
 
 
-## Visualización y tableros de control
+## Prototipado de visualización 
+
+Con el fin de poder establecer los requerimientos de los usuarios temáticos respecto a la consulta y visualización interactiva de los resultados del proyecto, se procedió a realizar una serie de reuniones donde se definieron prototipos no funcionales (_Mockups_) a través de los cuales se establecieron los elementos principales que deberían tener los diferentes tableros de control a implementar por el equipo de científicos de datos del proyecto.
 
 
+A continuación se muestra un ejemplo de los _Mockups_ propuestos inicialmente:
 
+![SNUIRA](prototipado.jpg "SNUIRA")
+
+Durante las revisiones de los _Mockups_ se encontró en algunas veces la necesidad de incluir nuevas dimensiones dentro del modelo definido en la herramienta de BI, así como la necesidad de generar nuevos  atributos o cálculos adicionales utilizando ya sea Power Query ( https://docs.microsoft.com/en-us/power-query/power-query-quickstart-using-power-bi ) o DAX  (https://docs.microsoft.com/en-us/power-bi/transform-model/desktop-quickstart-learn-dax-basics) 
+
+
+## Visualización de datos y tableros de control utilizando PowerBI
+
+Una vez se validaron los _Mockups_ de los tableros de control con los usuarios, se procedió a la implementación  de los mismos utilizando las herramientas disponibles de visualización en PowerBI.
 
 Ejemplo de tablero de control:
 
 ![SNUIRA](pbi2.jpg "SNUIRA")
 
-
+Los diferentes archivos _.pbix_ creados por el grupo de analítica fueron entregados a los usuarios temáticos según las recomendaciones impartidas por la entidad.
