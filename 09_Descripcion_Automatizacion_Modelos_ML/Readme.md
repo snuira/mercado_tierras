@@ -26,19 +26,19 @@ La selección del modelo más adecuado para realizar esta clasificación se fund
 
 *    Este algoritmo escrito en Python es adaptado e implementado desde Databricks tomando como datos de entrenamiento aquellos que inicialmente dispone el repositorio de Kaggle teniendo en cuenta que tienen un licenciamiento GPL2. 
 
-*    Librerías propias de Spark son utilizadas para el llamado de datos desde el Data Lake; una vez los datos son almacenados en variables, su administración, adecuación y manipulación se basa en el uso de Pandas.
+*    Librerías propias de _Spark_ son utilizadas para el llamado de datos desde el Data Lake; una vez los datos son almacenados en variables, su administración, adecuación y manipulación se basa en el uso de Pandas.
 
-*    El modelo Naive Bayes se implementa utilizando la librería de aprendizaje automático de código abierto Scikit-learn. La configuración del modelo se realiza teniendo en cuenta una distribución de los datos de entrenamiento y testeo del 80% y 20% respectivamente.
+*    El modelo Naive Bayes se implementa utilizando la librería de aprendizaje automático de código abierto _Scikit-learn_. La configuración del modelo se realiza teniendo en cuenta una distribución de los datos de entrenamiento y testeo del 80% y 20% respectivamente.
 
-*    El modelo implementa el método CountVectorizer con el fin de convertir en este caso la columna de texto (nombres de los intervinientes) en una matriz con valores de ocurrencia de cada uno de los términos que aparezcan en el texto. 
+*    El modelo implementa el método _CountVectorizer_ con el fin de convertir en este caso la columna de texto (nombres de los intervinientes) en una matriz con valores de ocurrencia de cada uno de los términos que aparezcan en el texto. 
 
-*    Seguidamente el modelo implementa el método TfidfTransformer el cual realiza la transformación de la matriz de ocurrencias inicialmente calculadas en una matriz normalizada de ocurrencias.
+*    Seguidamente el modelo implementa el método _TfidfTransformer_ el cual realiza la transformación de la matriz de ocurrencias inicialmente calculadas en una matriz normalizada de ocurrencias.
 
-*    Para la selección de los mejores hiper-parámetros se utiliza la librería GridSearchCV, la cual itera diferentes hiper-parámetros predefinidos y ajusta el modelo sobre los datos de entrenamiento. Una vez ajustado el modelo se calcula la precisión (Accuracy) arrojando como resultado 0.85.
+*    Para la selección de los mejores hiper-parámetros se utiliza la librería _GridSearchCV_, la cual itera diferentes hiper-parámetros predefinidos y ajusta el modelo sobre los datos de entrenamiento. Una vez ajustado el modelo se calcula la precisión (_Accuracy_) arrojando como resultado 0.85.
 
-*    El modelo es almacenado en formato .pkl con el fin de automatizar posteriores ejecuciones e invocaciones del mismo para distintos datos a predecir.
+*    El modelo es almacenado en formato ._pkl_ con el fin de automatizar posteriores ejecuciones e invocaciones del mismo para distintos datos a predecir.
 
-*    Una vez el modelo es salvado se selecciona el conjunto de datos y campo que contienen los nombres de los intervinientes para clasificación de genero, en donde su predicción es calculada en un nuevo campo que se añadirá al conjunto de datos iniciales. Los datos finales son luego exportados y almacenados en el Data Lake a través de librerías de spark.
+*    Una vez el modelo es salvado se selecciona el conjunto de datos y campo que contienen los nombres de los intervinientes para clasificación de genero, en donde su predicción es calculada en un nuevo campo que se añadirá al conjunto de datos iniciales. Los datos finales son luego exportados y almacenados en el Data Lake a través de librerías de _Spark_.
 
 *    La correspondiente validación y conclusiones del modelo podrán observarse en la sección 10.
 
@@ -51,7 +51,7 @@ La selección del modelo más adecuado para realizar esta clasificación se fund
 
 *    El uso de este algoritmo para la predicción de género basado en el nombre de las personas está apoyado en artículos como el del portal web de [Natural Language Processing for Hackers](https://nlpforhackers.io/introduction-machine-learning/), [Bird S.et al.(2009)](https://www.nltk.org/book/ch06.html) o el repositorio de código en GitHub de [Agbe J. (JCharis)](https://github.com/Jcharis/Python-Machine-Learning/blob/master/Gender%20Classification%20With%20%20Machine%20Learning/Gender%20Classification%20of%20Names%20With%20Machine%20Learning.ipynb). 
 
-*    Aunque ninguno de estos algoritmos mencionados ha sido diseñado para ser aplicado en la clasificación de genero basado en nombres en español, fundamentan su aplicación para el primer nombre de una persona e implementan una extracción de características (feature extraction) muy importantes a la hora de evaluar los nombres de una persona para identificar el género. Dentro de esta extracción se encuentra la evaluación de cada una de las primeras tres letras y las tres últimas letras del nombre.
+*    Aunque ninguno de estos algoritmos mencionados ha sido diseñado para ser aplicado en la clasificación de genero basado en nombres en español, fundamentan su aplicación para el primer nombre de una persona e implementan una extracción de características (_feature extraction_) muy importantes a la hora de evaluar los nombres de una persona para identificar el género. Dentro de esta extracción se encuentra la evaluación de cada una de las primeras tres letras y las tres últimas letras del nombre.
 
 <p align="center">
  <img src="decision_treest.png">
@@ -62,18 +62,18 @@ La selección del modelo más adecuado para realizar esta clasificación se fund
 
 *    Este algoritmo escrito en Python es adaptado e implementado desde Databricks tomando como datos de entrenamiento aquellos primeros nombres de intervinientes que fueron sujetos de una evaluación de frecuencia y revisión manual para la configuración de un conjunto de datos que se adaptasen de forma más cercana a las condiciones socio-culturales e idiomáticas de nombres registrados Colombia. De esta forma se conforma un conjunto de datos posee alrededor de 1500 nombres de hombres y mujeres con los cuales se entrena el modelo de árboles de decisión.
 
-*    De nuevo librerías propias de Spark son utilizadas para el llamado de datos desde el Data Lake; una vez los datos son almacenados en variables, su administración, adecuación y manipulación se basa en el uso de Pandas.
+*    De nuevo librerías propias de _Spark_ son utilizadas para el llamado de datos desde el Data Lake; una vez los datos son almacenados en variables, su administración, adecuación y manipulación se basa en el uso de Pandas.
 
-*    El modelo de Decision Trees se implementa utilizando la librería de aprendizaje automático de código abierto Scikit-learn. 
+*    El modelo de Decision Trees se implementa utilizando la librería de aprendizaje automático de código abierto _Scikit-learn_. 
 
-*    El modelo también implementa el método CountVectorizer con el fin de convertir en este caso la columna de texto (nombres de los intervinientes) en una matriz con valores de ocurrencia de cada uno de las letras que aparezcan en el texto del nombre para luego transformar y ajustar la matriz.
+*    El modelo también implementa el método _CountVectorizer_ con el fin de convertir en este caso la columna de texto (nombres de los intervinientes) en una matriz con valores de ocurrencia de cada uno de las letras que aparezcan en el texto del nombre para luego transformar y ajustar la matriz.
 
-*    Seguidamente se extraen (feature extraction) en un diccionario la primera letra, primeras dos letras, primeras tres letras, ultima letra, ultimas dos letras y ultimas tres letras para cada uno de los nombres. 
+*    Seguidamente se extraen (_feature extraction_) en un diccionario la primera letra, primeras dos letras, primeras tres letras, ultima letra, ultimas dos letras y ultimas tres letras para cada uno de los nombres. 
 
-*    Estas características luego son vectorizadas utilizando el método vectorize de la librería numpy y organizadas en un nuevo diccionario utilizando el método DictVectorizer para ajustar un nuevo conjunto de datos de entrenamiento considerando las características extraídas.
+*    Estas características luego son vectorizadas utilizando el método _vectorize_ de la librería _numpy_ y organizadas en un nuevo diccionario utilizando el método _DictVectorizer_ para ajustar un nuevo conjunto de datos de entrenamiento considerando las características extraídas.
 
-*    Se configura el modelo para ser ejecutado desde una nueva función, teniendo en cuenta una distribución de los datos de entrenamiento y testeo del 80% y 20% respectivamente. La precisión del modelo (Accuracy) sobre los datos de testeo arroja un valor de 0.89.
+*    Se configura el modelo para ser ejecutado desde una nueva función, teniendo en cuenta una distribución de los datos de entrenamiento y testeo del 80% y 20% respectivamente. La precisión del modelo (_Accuracy_) sobre los datos de testeo arroja un valor de 0.89.El modelo es salvado en formato ._pkl_ para futuras automatizaciones.
 
-*    Posteriormente la rutina invoca el modelo seleccionando el conjunto de datos y campo que contienen los nombres de los intervinientes para clasificación de genero considerando únicamente el primer nombre. La predicción es calculada en un nuevo campo que se añadirá al conjunto de datos iniciales. Los datos finales son luego exportados y almacenados en el Data Lake a través de librerías de spark.
+*    Posteriormente la rutina invoca el modelo seleccionando el conjunto de datos y campo que contienen los nombres de los intervinientes para clasificación de genero considerando únicamente el primer nombre. La predicción es calculada en un nuevo campo que se añadirá al conjunto de datos iniciales. Los datos finales son luego exportados y almacenados en el Data Lake a través de librerías de _Spark_.
 
 *    La correspondiente validación y conclusiones del modelo podrán observarse en la sección 10.
