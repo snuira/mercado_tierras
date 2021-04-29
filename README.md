@@ -37,7 +37,7 @@ Estructura de carpetas:
 * [07 - Validación de datos](07_Validacion_Datos)
 * [08 - Analisis: Análisis y procesamiento de datos](08_Analisis_Datos)
 * [09_Automatizacion: Automatización de modelos analíticos](09_Descripcion_Automatizacion_Modelos_ML)
-* 10_Validacion_Evaluacion_Modelos: Validación y evaluación de los modelos analíticos
+* [10_Validacion_Evaluacion_Modelos: Validación y evaluación de los modelos analíticos](10_Evaluacion_Validacion_Resultados_Modelos_ML)
 * [11 - Publicación de resultados](11_Publicacion)
 * [12 - Lecciones aprendidas y recomendaciones](12_Lecciones_Aprendidas)
 * [13 - Ejemplos de datos](13_Datos)
