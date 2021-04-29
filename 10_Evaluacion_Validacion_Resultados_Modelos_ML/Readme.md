@@ -14,13 +14,13 @@ Luego de haber experimentado con ambos modelos de Machine Learning (Naive Bayes 
 
 <p align="center">
  <img src="nb_resultados.jpg">
- Ventana de resultados de Naive Bayes
 </p>
+<p align="center">Ventana de resultados de Naive Bayes</p>
 
 <p align="center">
  <img src="dt_resultados.jpeg">
- Ventana de resultados de Decision Trees
 </p>
+ <p align="center">Ventana de resultados de Decision Trees</p>
 
 *    Para finalizar es importante mencionar que estas clasificaciones requieren de una validación temática y manual por parte de los expertos, la cual también se puede enfocar a un trabajo colaborativo para mayor agilidad en el proceso.
 
