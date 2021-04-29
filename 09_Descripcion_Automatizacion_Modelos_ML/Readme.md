@@ -4,8 +4,8 @@ La automatización de los modelos que se detallan a continuación son basados en
 
 La selección del modelo más adecuado para realizar esta clasificación se fundamentó inicialmente en una revisión tanto como de literatura y repositorios de código en los que ya se hubiese tratado de abordar esta clasificación de genero únicamente basado en el nombre de los individuos. En este orden de ideas los modelos evaluados fueron Naive Bayes y Arboles de Decisión (Decision Trees). Vale la pena destacar que, aunque existen otros tipos de modelos, se trataron de seleccionar aquellos que más se acomodaran al contexto temático de los nombres a clasificar. En otras palabras, que se pudiesen adaptar al contexto nacional e idiomático.
 
-	- 1.[Método de Naive Bayes](#1naive_bayes)
-	- 2.[Método de Arboles de Decisión](#2decision_trees)
+1. [Método de Naive Bayes](#1naive_bayes)
+2. [Método de Arboles de Decisión](#2decision_trees)
 
 <a name="1naive_bayes"></a>
 ## 1.	Método de Naive Bayes:
