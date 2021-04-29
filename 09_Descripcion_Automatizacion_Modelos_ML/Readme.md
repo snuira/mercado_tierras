@@ -4,8 +4,8 @@ La automatización de los modelos que se detallan a continuación son basados en
 
 La selección del modelo más adecuado para realizar esta clasificación se fundamentó inicialmente en una revisión tanto como de literatura y repositorios de código en los que ya se hubiese tratado de abordar esta clasificación de genero únicamente basado en el nombre de los individuos. En este orden de ideas los modelos evaluados fueron Naive Bayes y Arboles de Decisión (Decision Trees). Vale la pena destacar que, aunque existen otros tipos de modelos, se trataron de seleccionar aquellos que más se acomodaran al contexto temático de los nombres a clasificar. En otras palabras, que se pudiesen adaptar al contexto nacional e idiomático.
 
-	- [1.	Método de Naive Bayes](#1naive_bayes)
-	- [2.	Método de Arboles de Decisión](#2decision_trees)
+	- 1.[Método de Naive Bayes](#1naive_bayes)
+	- 2.[Método de Arboles de Decisión](#2decision_trees)
 
 <a name="1naive_bayes"></a>
 ## 1.	Método de Naive Bayes:
@@ -58,7 +58,7 @@ La selección del modelo más adecuado para realizar esta clasificación se fund
  Tomado de https://nlpforhackers.io/introduction-machine-learning/
 </p>
 
-**Implementación **
+**Implementación**
 
 *    Este algoritmo escrito en Python es adaptado e implementado desde Databricks tomando como datos de entrenamiento aquellos primeros nombres de intervinientes que fueron sujetos de una evaluación de frecuencia y revisión manual para la configuración de un conjunto de datos que se adaptasen de forma más cercana a las condiciones socio-culturales e idiomáticas de nombres registrados Colombia. De esta forma se conforma un conjunto de datos posee alrededor de 1500 nombres de hombres y mujeres con los cuales se entrena el modelo de árboles de decisión.
 
