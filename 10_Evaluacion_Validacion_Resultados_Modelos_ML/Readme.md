@@ -13,12 +13,12 @@ Luego de haber experimentado con ambos modelos de Machine Learning (Naive Bayes 
 *    A continuación, se muestra un ejemplo de la clasificación de datos por los distintos modelos de ML:
 
 <p align="center">
- <img src="nb_resultados.png">
+ <img src="nb_resultados.jpg">
  Ventana de resultados de Naive Bayes
 </p>
 
 <p align="center">
- <img src="dt_resultados.png">
+ <img src="dt_resultados.jpeg">
  Ventana de resultados de Decision Trees
 </p>
 
