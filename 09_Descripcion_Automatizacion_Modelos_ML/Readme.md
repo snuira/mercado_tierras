@@ -55,8 +55,9 @@ La selección del modelo más adecuado para realizar esta clasificación se fund
 
 <p align="center">
  <img src="decision_treest.png">
-<p>Tomado de https://nlpforhackers.io/introduction-machine-learning/</p>
 </p>
+<p align="center">Tomado de https://nlpforhackers.io/introduction-machine-learning/</p>
+
 
 **Implementación**
 
