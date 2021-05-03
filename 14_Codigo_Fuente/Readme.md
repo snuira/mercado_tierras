@@ -14,7 +14,7 @@
   * adf: Copia de los archivos de configuración generados por Microsoft Azure Data Factory
 
 
-* **Carpeta procesis:**
+* **Carpeta procesos:**
 
 
   * **01_SNUIRA_ETL_Empresas.py:** Limpieza y adecuación de datos con nombres de empresas provenientes de datos.gov.co, SECOP I, y Directorio estadístico de empresas DANE.
