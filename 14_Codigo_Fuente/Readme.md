@@ -27,6 +27,3 @@
   * **08_Modelo_Prediccion_Genero_ML_NB.py:** Experimentación de predicción de género de los intervinientes de Transacciones Rurales a partir del nombre, utilizando el modelo de ML Naive Bayes.
   * **09_Modelo_Prediccion_Genero_ML_DT.py:** Predicción de género de los intervinientes de Transacciones Rurales a partir del primer nombre utilizando el modelo de ML Decision Trees.
   * **10_Export_Data_Dashboard.py:** Adecuación del archivo interrelacionado de Transacciones Rruales con el catastro alfanumérico R1R2.
-
-  
-  *  Dentro de este folder se encuentra el archivo de Python [modelo_prediccion_genero_ml_nb.py](https://github.com/snuira/mercado_tierras/blob/main/14_Codigo_Fuente/modelo_ml_naive_bayes/modelo_prediccion_genero_ml_nb.py) el cual contiene el algoritmo para la predicción de genero basado en el nombre de una persona. El algoritmo está basado en un modelo de Machine Learning que implementa el teorema de Naive Bayes. Este modelo se encuentra configurado y parametrizado por medio de la librería scikit-learn. Este modelo se ha adaptado para ser ejecutado desde el servicio Databricks de Microsoft Azure.
